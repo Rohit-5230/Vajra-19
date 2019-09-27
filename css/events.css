@@ -1,0 +1,25 @@
+@font-face {
+    font-family: "product-sans-regular";
+    src: url("../font/Product Sans Regular.ttf") format("opentype");
+}
+
+.modal-footer{
+    display: inline !important;
+}
+
+.card{
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.699), 0 10px 20px 0 rgba(0, 0, 0, 0.644);
+}
+
+#events{
+    background-image: linear-gradient( rgba(31, 30, 30, 0.096), rgba(29, 28, 28, 0.062)), url('../images/eventbg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+body{
+    font-family:"product-sans-regular";
+}
