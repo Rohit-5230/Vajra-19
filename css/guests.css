@@ -39,21 +39,7 @@ body{
     height:30px;
     border-radius:5px;
 }
-.fa-instagram{
-  display: inline-block;
-  width: 25px;
-  height: 25px;
-  text-align: center;
-  border-radius: 5px;
-  color: #fff;
-  font-size: 20px;
-  line-height: 26px;
-  padding-left:4px;
-  margin:auto;
-  background: #d6249f;
-  background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-  box-shadow: 0px 3px 10px rgba(0,0,0,.25);
-}
+
 .empty {
     font-family: FontAwesome;
     font-style: normal;
@@ -86,7 +72,7 @@ body{
 .fa-instagram {
     background: #125688;
     color: white;
-    height:50px;
+   
   }
 #signup_form{
     padding:40px;
