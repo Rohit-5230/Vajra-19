@@ -1,1 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <title>Vajra'19| </title>
+    <meta charset="utf-8">
+    <meta name="viewport" , content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+<!--NAVBAR-->
+
+<div id='nav'>
+        <img src="download.jpg" id="logo" width="65px" height="65px"/>
+
+<nav class="nav">
+        <div class="container">
+              <div id="mainListDiv" class="main_list">
+                <ul class="navlinks">
+                    <li><a href="#" class="upp">HOME</a></li>
+                    <li><a href="#" class="upp">ABOUT US</a></li>
+                    <li><a href="#" class="upp">EVENTS</a></li>
+                    <li><a href="" class="upp">RULEBOOK</a></li>
+                    <li><a href='' class="upp">GUESTS</a></li>
+                    <li><a href='' class="upp">SPONSERS</a></li>
+                    <li><a href='' class="upp">GALLERY</a></li>
+                    <li><a href='' class="upp">OUR TEAM</a></li>
+                    <li><a href='#' class="upp">CONTACT US</a></li>
+                </ul>
+            </div>
+            <span class="navTrigger">
+                <i></i>
+                <i></i>
+                <i></i>
+            </span>
+        </div>
+    </nav>
+        
+
+
+
+<!--1st SECTION-->
+<section class="home">
+    </section>
+    <div style="height: 400px">
+       <br><br><br>
+            <p class="myP">
+                
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum ratione facere animi impedit rem labore sint repellendus ipsa sapiente voluptatem aut excepturi quo itaque, ab earum cumque. Voluptatem beatae id inventore quod voluptate qui deserunt, quis placeat, tempora ex totam, dolore sequi harum eos voluptatibus animi labore officiis minus laboriosam..
+                                  
+            </p>
+    </div>
+
+<br>
+
+
+
+
+
+<!-- Jquery needed -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="js/scripts.js"></script>
+
+
+<script src="js/jquery.js"></script>
+    <script src=js/bootstrap.js></script>
+
+<!-- Function used to shrink nav bar removing paddings and adding black background -->
+<script>
+    $(window).scroll(function() {
+        if ($(document).scrollTop() > 50) {
+            $('.nav').addClass('affix');
+            console.log("OK");
+        } else {
+            $('.nav').removeClass('affix');
+        }
+    });
+</script>
+
+<script>
+
+        $('.navTrigger').click(function () {
+           $(this).toggleClass('active');
+           $("#mainListDiv").toggleClass("show_list");
+           $("#mainListDiv").fadeIn();
+       });
+       $('.upp').click(function () {
+           $('.navTrigger').toggleClass('active');
+           $("#mainListDiv").toggleClass("show_list");
+           $("#mainListDiv").fadeIn();
+       });
+</script>
+
+</body>
+
+
+</html>
