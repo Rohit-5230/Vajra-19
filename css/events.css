@@ -23,3 +23,8 @@
 body{
     font-family:"product-sans-regular";
 }
+
+.modal-header{
+   background-color:rgb(19, 92, 126);
+   color: whitesmoke;
+}
