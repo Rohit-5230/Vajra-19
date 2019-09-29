@@ -5,7 +5,7 @@ body{
 
 }
 #our_team{
-    background-image: url("../back.jpg");
+    background-image: url("../images/back.jpg");
     background-size:cover;
     width: 100%;
     height:100%;
@@ -71,4 +71,53 @@ fa:hover {
 .fa-envelope{
   
   color:white;
+}
+#last{
+  background-color:black;
+  color:white;
+  margin: 0;
+}
+#signin{
+  padding:20px;
+  background-color:#E6E6E6;
+  color:black;
+  width:500px;
+  border-radius:10px;
+}
+.form-control{
+  background-color:white;
+  width:450px;
+}
+#contacting{
+  padding:40px;
+}
+#designation{
+  width:450px;
+  height:30px;
+  border-radius:5px;
+}
+.fa-instagram {
+  background: #125688;
+  color: white;
+}
+.empty {
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-decoration: inherit;
+}
+
+#signup_form{
+  padding:40px;
+  width:500px;
+}
+
+@media all and (max-width:360px){
+  .col{
+      width:100%;
+      padding:0;
+  }
+  #signin{
+      padding:0;
+  }
 }
