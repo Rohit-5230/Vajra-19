@@ -33,6 +33,9 @@ body{
     box-shadow: 0 30px 25px 0 rgba(2,2,2,0.9);
     background:rgba(75, 59, 59, 0.68);
     
+  }
+  .wrap-back{
+    background-color: black;
   } 
 
   
@@ -58,7 +61,7 @@ fa:hover {
 }
 
 .fa-facebook {
-  background: #3B5998;
+  
   color: white;
  
 }
@@ -75,7 +78,7 @@ fa:hover {
 }
 
 .fa-instagram {
-  background: #125688;
+
   color: white;
 }
 #last{
