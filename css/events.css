@@ -32,3 +32,119 @@ body{
 .border{
     width: 3px;
 }
+@font-face {
+    font-family: "product-sans-regular";
+    src: url("../font/Product Sans Regular.ttf") format("opentype");
+}
+
+.modal-footer{
+    display: inline !important;
+}
+
+.card{
+    box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.699), 0 10px 20px 0 rgba(0, 0, 0, 0.644);
+}
+
+#events{
+    background-image: linear-gradient( rgba(31, 30, 30, 0.096), rgba(29, 28, 28, 0.062)), url('../images/eventbg.jpg');
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+   
+}
+
+body{
+    font-family:"product-sans-regular";
+}
+
+.modal-header{
+   background-color:rgb(19, 92, 126);
+   color: whitesmoke;
+}
+
+
+.fa {
+    padding:10px;
+    font-size: 35px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 30%;
+    
+  }
+  
+  fa:hover {
+    opacity: 2.5;
+    color:black;
+  }
+  
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+   
+  }
+  
+  #last{
+    background-color:black;
+    color:white;
+    margin: 0;
+  }
+  #signin{
+    padding:20px;
+    background-color:#E6E6E6;
+    color:black;
+    width:500px;
+    border-radius:10px;
+  }
+  .form-control{
+    background-color:white;
+    width:450px;
+  }
+  #contacting{
+    padding:40px;
+  }
+  #designation{
+    width:450px;
+    height:30px;
+    border-radius:5px;
+  }
+  .fa-instagram {
+    background: #125688;
+    color: white;
+  }
+  .empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+  
+  #signup_form{
+    padding:40px;
+    width:500px;
+  }
+  
+  @media all and (max-width:450px){
+    .col{
+        width:100%;
+        padding:0;
+     
+    }
+    #signin{
+       width:100%;
+       padding: 0;
+       border-radius:4px;
+    }
+  
+    #designation{
+      width:100%;
+      padding:0;
+    }
+    .form-control{
+      width:100%;
+      padding:0;
+    }
+  }
