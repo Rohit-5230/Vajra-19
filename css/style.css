@@ -414,6 +414,7 @@ img {
 .wrap-2{
     background: black;
 }
+
 /*---------------------------for Carousel---------------------------------------*/
 html {
             font-family: sans-serif;
@@ -1050,7 +1051,7 @@ html {
   
   
  .fa-facebook {
-    background: #3B5998;
+  
     color: white;
     width:40px;
     height:45px;
@@ -1067,9 +1068,8 @@ html {
     line-height: 26px;
     padding-left:8px;
     margin:auto;
-    background: #d6249f;
-    background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%,#d6249f 60%,#285AEB 90%);
-    box-shadow: 0px 3px 10px rgba(0,0,0,.25);
+   
+    
   }
 
 #signup_form{
