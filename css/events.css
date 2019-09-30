@@ -93,13 +93,24 @@ body{
     width:500px;
   }
   
-  @media all and (max-width:360px){
+  @media all and (max-width:450px){
     .col{
         width:100%;
         padding:0;
+     
     }
     #signin{
-        padding:0;
-        
+       width:100%;
+       padding: 0;
+       border-radius:4px;
+    }
+  
+    #designation{
+      width:100%;
+      padding:0;
+    }
+    .form-control{
+      width:100%;
+      padding:0;
     }
   }
