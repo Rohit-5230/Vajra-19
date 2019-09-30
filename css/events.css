@@ -12,7 +12,7 @@
 }
 
 #events{
-    background-image: linear-gradient( rgba(31, 30, 30, 0.096), rgba(29, 28, 28, 0.062)), url('../images/eventbg.jpg');
+    background-image: linear-gradient( rgba(15, 15, 15, 0.322), rgba(17, 16, 16, 0.425)), url('../images/eventbg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -27,4 +27,8 @@ body{
 .modal-header{
    background-color:rgb(19, 92, 126);
    color: whitesmoke;
+}
+
+.border{
+    width: 3px;
 }
