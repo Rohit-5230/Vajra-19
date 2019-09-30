@@ -7,7 +7,10 @@
     <meta name="viewport" , content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
 <body>
@@ -52,18 +55,99 @@
             <div class="slideshow-image" style="background-image: url('images/front.jpg')"></div>
         </div>
     </div>
-        <div class="wrap-5" style="padding: 100vh 0 0 0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae atque labore voluptatum recusandae. Numquam, eligendi. Explicabo, nulla asperiores ipsum voluptatibus, iste delectus recusandae sequi, optio sint obcaecati quis eligendi modi.</p>
-        </div>
-        <div class="wrap-6">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae atque labore voluptatum recusandae. Numquam, eligendi. Explicabo, nulla asperiores ipsum voluptatibus, iste delectus recusandae sequi, optio sint obcaecati quis eligendi modi.</p>
-        </div>
-        <div class="wrap-7">
+     
+    
+    <div class="wrap-5" style="padding: 100vh 0 0 0">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae atque labore voluptatum recusandae. Numquam, eligendi. Explicabo, nulla asperiores ipsum voluptatibus, iste delectus recusandae sequi, optio sint obcaecati quis eligendi modi.</p>
         </div>
 
+     <footer>
+                        <div class="row" id="last">
+                            <div class="col-sm-6" id="contacting">
+                                <h3 style="color:green;font-size:25px;">CONTACT US</h3>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <i class="fa fa-map-marker"></i>
+                                    </div>
+                                    <div class="col-sm-11" style="font-size:25px">
+                                        Vajra Office, BIT Mesra - 835215
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <i class="fa fa-phone"></i>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <a href="tel:+917651929150" style="color:#C0C0C0; font-size: 25px;">+91-7651929150</a>
+                                    </div>
+                                </div>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-1">
+                                        <i class="fa fa-envelope"></i>
+                                    </div>
+                                    <div class="col-sm-11">
+                                        <a href="mailto:vajra@bitmesra.ac.in"
+                                            style="color:#C0C0C0; font-size: 25px">vajra@bitmesra.ac.in</a>
+                                    </div>
+                                </div>
+                                <br>
+                                <h3 style="color:green; font-size:25px;">FOLLOW US</h3>
+                                <br>
+                                <div class="row">
+                                    <div class="col-sm-12">
+                                        <a href="https://www.facebook.com/vajra.bitm/" target="_blank">
+                
+                                            <i class="fa fa-facebook">&nbsp</i>
+                                        </a>
+                                        <a href="https://instagram.com/vajra_19?igshid=7cs8ux0gzhs1" target="_blank">
+                                            <i class="fa fa-instagram">&nbsp</i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col" id="signup_form">
+                                <h3 style="color:springgreen; font-weight:900; font-size:25px;">GET IN TOUCH WITH US</h3>
+                                <div class="row" style="width:100%;"></div>
+                                <form action="/action_page.php" id="signin">
+                
+                                    <label for="email">EMAIL ADDRESS:</label>
+                                    <input type="email" class="form-control empty" id="email" style="font-weight:500; font-size:15px"
+                                        placeholder="&#x0040; Enter Your Email">
+                                    <br>
+                                    <label for="name">NAME:</label>
+                                    <input type="text" class="form-control empty" id="name" style="font-weight:500; font-size:15px"
+                                        placeholder="&#x1F464; Enter Your Name">
+                                    <br>
+                                    <label for="designation">DESIGNATION:</label>
+                                    <br>
+                                    <select id="designation" style="color:#2F4F4F; font-size:15px">
+                                        <option>Player</option>
+                                        <option>Captain</option>
+                                    </select>
+                                    <br><br>
+                                    <label for="institute">INSTITUTE NAME:</label>
+                                    <input type="text" class="form-control empty" id="institute" style="font-weight:500; font-size:15px;"
+                                        placeholder="&#x1F3EB;Enter Your College Name">
+                                    <br>
+                                    <label for="phone">PHONE NUMBER:</label>
+                                    <input type="text" class="form-control empty" id="phone" style="font-weight:500; font-size:15px;"
+                                        placeholder="&#x1F4DE;Enter Your Phone Number">
+                                    <br>
+                                    <button type="submit" class="btn btn-primary" style="font-size:18px;">SUBMIT</button>
+                
+                                </form>
+                            </div>
+                        </div>
+                        </div>
+                    </footer>
+                
+    
 
 
+                    
 
     <!-- Jquery needed -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
@@ -95,7 +179,7 @@
         });
 
     </script>
-    <script src="js/index.min.js"></script>
+    <script src="js/index.js"></script>
 
 </body>
 
