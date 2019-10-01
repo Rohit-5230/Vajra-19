@@ -43,6 +43,7 @@ body {
   .wrap{
       background-color:black;
       height:8vh;
+      
   }  
   
 
@@ -57,11 +58,13 @@ body {
   .overlay a {
     padding: 8px;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 30px;
     color:blueviolet;
     display: block;
     transition: 0.3s;
+    text-align:center;
   }
+
   
   .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
@@ -70,17 +73,17 @@ body {
   .overlay .closebtn {
     position: absolute;
     top: 1%;
-    right: 45px;
+    right: 1%;
     font-size: 60px;
     color:whitesmoke;
   }
   
   @media screen and (max-height: 450px) {
-    .overlay a {font-size: 20px}
+    .overlay a {font-size: 10px}
     .overlay .closebtn {
-    font-size: 40px;
-    top: 15px;
-    right: 35px;
+    font-size: 10px;
+    top: 1%;
+    right: 1%;
     }
   }
 
