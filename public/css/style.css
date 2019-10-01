@@ -43,7 +43,11 @@ body {
   .wrap{
       background-color:black;
       height:8vh;
-      
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:1000;
+            
   }  
   
 
@@ -72,9 +76,9 @@ body {
   
   .overlay .closebtn {
     position: absolute;
-    top: 1%;
+    top: 0%;
     right: 1%;
-    font-size: 60px;
+    font-size: 40px;
     color:whitesmoke;
   }
   
@@ -82,10 +86,14 @@ body {
     .overlay a {font-size: 10px}
     .overlay .closebtn {
     font-size: 10px;
-    top: 1%;
+    top: 0%;
     right: 1%;
     }
   }
+
+
+  
+
 
 /*---------------------------for Carousel---------------------------------------*/
 html {
