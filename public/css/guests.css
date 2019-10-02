@@ -15,38 +15,6 @@ body{
     src: url("../font/Product Sans Regular.ttf") format("opentype");
 }
 
-#last{
-    background-color:black;
-    color:white;
-    margin: 0;
-}
-#signin{
-    padding:20px;
-    background-color:#E6E6E6;
-    color:black;
-    width:500px;
-    border-radius:10px;
-}
-.form-control{
-    background-color:white;
-    width:300px;
-}
-#contacting{
-    padding:40px;
-}
-#designation{
-    width:300px;
-    height:30px;
-    border-radius:5px;
-}
-
-.empty {
-    font-family: FontAwesome;
-    font-style: normal;
-    font-weight: normal;
-    text-decoration: inherit;
-}
-
 .fa {
     padding:10px;
     font-size: 35px;
@@ -64,27 +32,144 @@ body{
   }
   
   
- .fa-facebook {
-    background: #3B5998;
+  .fa-facebook {
+ 
     color: white;
    
   }
-.fa-instagram {
-    background: #125688;
-    color: white;
-   
+  
+  #last{
+    background-color:black;
+    color:white;
+    margin: 0;
   }
-#signup_form{
+  #signin{
+    padding:20px;
+    background-color:#E6E6E6;
+    color:black;
+    width:500px;
+    border-radius:10px;
+  }
+  .form-control{
+    background-color:white;
+    width:450px;
+  }
+  #contacting{
     padding:40px;
-    width:50%;
-}
-
-@media all and (max-width:360px){
+  }
+  #designation{
+    width:450px;
+    height:30px;
+    border-radius:5px;
+  }
+  .fa-instagram {
+    
+    color: white;
+  }
+  .empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+  
+  #signup_form{
+    padding:40px;
+    width:500px;
+  }
+  
+  @media all and (max-width:450px){
     .col{
         width:100%;
         padding:0;
+     
     }
     #signin{
-        padding:0;
+       width:100%;
+       padding: 0;
+       border-radius:4px;
     }
-}
+  
+    #designation{
+      width:100%;
+      padding:0;
+    }
+    .form-control{
+      width:100%;
+      padding:0;
+    }
+  }
+  .wrap-back{
+    background-color: black;
+  } 
+
+
+  /*FOR NAVBAR*/
+
+body {
+    font-family: 'Lato', sans-serif;
+  }
+  
+  .overlay {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 300;
+    top: 0;
+    left:0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
+    overflow-x: hidden;
+    transition: 0.5s;
+   
+  }
+  .wrap{
+      background-color:black;
+      height:9vh;
+      position:fixed;
+      top:0;
+      width:100%;
+      z-index:1000;
+            
+  }  
+  
+
+  .overlay-content {
+    position: relative;
+    top: 12%;
+    width: 100%;
+    text-align: center;
+    margin-top: 1em;
+  }
+  
+  .overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 30px;
+    color:blueviolet;
+    display: block;
+    transition: 0.3s;
+    text-align:center;
+  }
+
+  
+  .overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+  }
+  
+  .overlay .closebtn {
+    position: absolute;
+    top: 0%;
+    right: 1%;
+    font-size: 40px;
+    color:whitesmoke;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 10px}
+    .overlay .closebtn {
+    font-size: 10px;
+    top: 0%;
+    right: 1%;
+    }
+  }
