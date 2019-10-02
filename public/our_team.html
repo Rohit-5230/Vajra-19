@@ -11,6 +11,34 @@
 </head>
 
 <body>
+
+
+
+  <!--NAVBAR-->
+  <div class="wrap">
+      <div id="myNav" class="overlay">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <div class="overlay-content text-center"">
+                <a href='index.html'>HOME</a>
+                <a href="#">ABOUT US</a>
+                <a href="events.html">EVENTS</a>
+                <a href="images/GeneralRules.pdf">RULEBOOK</a>
+                <a href="guests.html">GUESTS</a>
+                <a href="sponsers.html">SPONSERS</a>
+                <a href="gallery.html">GALLERY</a>
+                <a href="our_team.html">OUR TEAM</a>
+                <a href="#contact">CONTACT US</a>
+              </div>
+            </div>
+  <div class='navbar1'>
+      <div class='container-fluid'>
+          <span style="font-size:2em;cursor:pointer;float:right; color:white; " onclick="openNav()">&#9776;    Menu</span>
+      </div>
+  </div>
+  
+      
+      </div>
+<br><br><br>
   
   <div id='our_team'>
         <div class='container'>
@@ -339,7 +367,7 @@
 
 
 
-              
+   <section id='contact'>           
 
     <footer>
      <div class='wrap-back'>
@@ -396,6 +424,7 @@
                     </div>
                 </div>
             </div>
+            
             <div class="col" id="signup_form">
                 <h3 style="color:springgreen; font-weight:900;">GET IN TOUCH WITH US</h3>
                 <div class="row" style="width:100%;"></div>
@@ -429,6 +458,7 @@
       </div>
     </div>
     </footer>
+    </section>
 
     <script src="js/wow.min.js"></script>
               <script>
@@ -437,5 +467,16 @@
 
 <script src="js/jquery.js"></script>
     <script src=js/bootstrap.js></script>
+
+  <script>
+        function openNav() {
+          document.getElementById("myNav").style.width= "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width= "0%";
+        }
+        
+  </script>
 </body>
 </html>
