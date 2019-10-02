@@ -12,6 +12,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <!--For Preloader-->
 <script rel="preloader" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
 <script rel="preloader" src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.2/modernizr.js"></script>
@@ -26,32 +27,23 @@
     <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <div class="overlay-content text-center"">
-              <a href="#">ABOUT US</a>
+              <a href="about_us.html">ABOUT US</a>
               <a href="events.html">EVENTS</a>
               <a href="#">RULEBOOK</a>
-              <a href="#">GUESTS</a>
-              <a href="#">SPONSERS</a>
+              <a href="guests.html">GUESTS</a>
+              <a href="">SPONSERS</a>
               <a href="#">GALLERY</a>
-              <a href="#">OUR TEAM</a>
+              <a href="our_team.html">OUR TEAM</a>
               <a href="#">CONTACT US</a>
             </div>
           </div>
 <div class='navbar1'>
     <div class='container-fluid'>
-        <span style="font-size:5.5em;cursor:pointer;float:right; color:white; " onclick="openNav()">&#9776;    Menu</span>
+        <span style="font-size:6em;cursor:pointer;float:right; color:white; " onclick="openNav()">&#9776;    Menu</span>
     </div>
 </div>
 
- <script>
-function openNav() {
-  document.getElementById("myNav").style.width= "100%";
-}
-
-function closeNav() {
-  document.getElementById("myNav").style.width= "0%";
-}
-
-</script>
+ 
     
     </div>
     <!--  Carousel  -->
@@ -66,21 +58,104 @@ function closeNav() {
         </div>
     </div>
      
+    <br><br>
     
     <div class="wrap-5" style="padding: 100vh 0 0 0">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae atque labore voluptatum recusandae. Numquam, eligendi. Explicabo, nulla asperiores ipsum voluptatibus, iste delectus recusandae sequi, optio sint obcaecati quis eligendi modi.</p>
+            <div class='container-fluid'>
+            <center>
+                <h1 style="font-size:60px; font-weight:bold;">ABOUT US</h1>
+            </center>
+            <br><br>
+            <center>
+            <p style="font-size:30px; color:red; text-align:center; font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; font-weight:bolder;">
+                    We at Birla Institute of Technology, Mesra, have always upheld sportsmanship in its highest spirits and have strived to make sure people with a passion for sports have access to a plethora of sports with modern facilities.
+                    It was in this motivation that we came up with the idea of VAJRA: which in essence is symbolic of strength, athleticism and a never die attitude that underlines the character of a true sportsman.
+                    The objective of the countrywide sports extravaganza is to assemble like-minded sportsmen and provide them with a platform to showcase their talent, get recognized and realize their true passion for the sport in a highly competitive, non-bias environment.
+            </p>
+            </center>
+        </div>
         </div>
         
-        <div class="wrap-5" style="padding: 100vh 0 0 0">
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae atque labore voluptatum recusandae. Numquam, eligendi. Explicabo, nulla asperiores ipsum voluptatibus, iste delectus recusandae sequi, optio sint obcaecati quis eligendi modi.</p>
-            </div>
-            <div class="wrap-5" style="padding: 100vh 0 0 0">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae atque labore voluptatum recusandae. Numquam, eligendi. Explicabo, nulla asperiores ipsum voluptatibus, iste delectus recusandae sequi, optio sint obcaecati quis eligendi modi.</p>
-                </div>
-                <div class="wrap-5" style="padding: 100vh 0 0 0">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae atque labore voluptatum recusandae. Numquam, eligendi. Explicabo, nulla asperiores ipsum voluptatibus, iste delectus recusandae sequi, optio sint obcaecati quis eligendi modi.</p>
+
+        <section id="facts" class="wow fadeIn" style="padding: 4vh 0 0 0">
+                <div class="container">
+    
+                    <header class="section-header">
+                        <center>
+                        <h1 style="font-size:60px; font-weight:bold;">FACTS AND FIGURES</h3>
+                        </center>
+                    </header>
+    
+                    <br><br><br><br>
+                    <div class="row counters">
+    
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up" id="fb-counter">50000</span>
+                            <p>Facebook Likes</p>
+                        </div>
+    
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up">12000</span>
+                            <p>Footfall</p>
+                        </div>
+    
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up">30</span>
+                            <p>Participating Colleges</p>
+                        </div>
+    
+                        <div class="col-lg-3 col-6 text-center">
+                            <span data-toggle="counter-up">40</span>
+                            <p>Vajra Builders</p>
+                        </div>
+    
                     </div>
-                                       
+    
+                </div>
+            </section>  
+     
+            
+     <section id ='gallery'>
+            <div class="container">
+                    <h2>Carousel Example</h2>  
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                        <li data-target="#myCarousel" data-slide-to="1"></li>
+                        <li data-target="#myCarousel" data-slide-to="2"></li>
+                      </ol>
+                  
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner">
+                        <div class="item active">
+                          <img src="images/download.jpg" alt="Los Angeles" style="width:100%;">
+                        </div>
+                  
+                        <div class="item">
+                          <img src="images/TableTennis.jpg" alt="Chicago" style="width:100%;">
+                        </div>
+                      
+                        <div class="item">
+                          <img src="images/Basketball.jpg" alt="New york" style="width:100%;">
+                        </div>
+                      </div>
+                  
+                      <!-- Left and right controls -->
+                      <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="right carousel-control" href="#myCarousel" data-slide="next">
+                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
+                  </div>
+                  
+            
+     </section>       
+                                     
 
     
      <!-- Jquery needed -->
@@ -97,7 +172,16 @@ function closeNav() {
               new WOW().init();
               </script>
 
-
+<script>
+        function openNav() {
+          document.getElementById("myNav").style.width= "100%";
+        }
+        
+        function closeNav() {
+          document.getElementById("myNav").style.width= "0%";
+        }
+        
+        </script>
 
 </body>
 

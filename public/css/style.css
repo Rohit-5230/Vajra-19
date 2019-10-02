@@ -786,6 +786,59 @@ html {
       padding:0;
     }
   }
+  .wrap-5
+  {
+      background-image: url("../images/attractive-backdrop-background-988872.jpg");
+      
+  }
+
+  /* Facts Section
+--------------------------------*/
+
+#facts {
+    background: url("../images/photo-1458682625221-3a45f8a844c7.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 0 0;
+    position: relative;
+  }
+  
+  #facts::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.88);
+    z-index: 20;
+  }
+  
+  #facts .container {
+    position: relative;
+    z-index: 20;
+  }
+  
+  #facts .counters span {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    display: block;
+    color:blueviolet;
+  }
+  
+  #facts .counters p {
+    padding: 0;
+    margin: 0 0 20px 0;
+    font-family: "Montserrat", sans-serif;
+    font-size: 14px;
+    color: #111;
+  }
+  
+  #facts .facts-img {
+    text-align: center;
+    padding-top: 30px;
+  }
+  
 
 /*------DO NOT TOUCH---SCROLL ANIMATION----AFTER THIS LINE--------------------- */
 @charset "UTF-8";/*!
