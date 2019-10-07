@@ -824,8 +824,13 @@ hr.style15:after {
    
 }
 
+#past_sponsers{
+    background: url("../images/sponsers-bg.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 0 0;
+    position: relative;
 
-
+}
   /* Facts Section
 --------------------------------*/
 
