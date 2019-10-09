@@ -218,11 +218,11 @@ h3 {
 
 @-webkit-keyframes glow {
     from {
-        text-shadow: 0 0 1px #041a23, 0 0 2px #041a23, 0 0 3px #041a23, 0 0 4px #041a23, 0 0 5px #041a23;
+        text-shadow: 0 0 1px white, 0 0 2px #041a23, 0 0 3px #041a23, 0 0 4px #041a23, 0 0 5px #041a23;
     }
 
     to {
-        text-shadow: 0 0 6px black, 0 0 12px #f7f1f1, 0 0 18px white, 0 0 24px white;
+        text-shadow: 0 0 6px #3a41e0, 0 0 12px #3a41e0, 0 0 18px #3a41e0, 0 0 24px #3a41e0;
     }
 }
 
@@ -974,86 +974,22 @@ textarea {
 
 .hero {
     position: absolute;
-    top: 40%;
+    top: 50%;
     left: 50%;
     -webkit-transform: translate3d(-50%, -50%, 0);
     transform: translate3d(-50%, -50%, 0);
     z-index: 99;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     text-transform: uppercase;
-    /*            box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);*/
-    padding: 1em 2em;
-    line-height: 1.5;
+    /*            background-color: rgba(255, 255, 255, 0.75);*/
+    box-shadow: 0 1em 2em -1em rgba(0, 0, 0, 0.5);
     /*            animation: titleAnimation 30s linear infinite 0s*/
 }
-#sc2 {
+
+#sc2{
     width: 8%;
-    border-radius: 50%;
 }
-
-#sc {
-    border-radius: 50%;
-}
-
-.verticle-line {
-    display: inline;
-    width: 1.5px;
-    margin: 0 30px;
-    height: 270px;
-    font-size: 120px;
-    /*    background: #915d36;*/
-    text-align: center;
-    /*    box-shadow: 2px 2px 10px 3px #915d36;*/
-}
-
-.hero img {
-    width: 28%
-}
-
-@media all and (max-width:1200px) {
-    .hero img {
-        width: 35%
-    }
-}
-
-@media all and (max-width:920px) {
-    .hero img {
-        width: 28%
-    }
-}
-
-@media all and (max-width:776px) {
-    .hero img {
-        width: 40%
-    }
-    .verticle-line {
-    margin: 0 10px;
-    font-size: 80px;
-}
-}
-
-@media all and (max-width:650px) {
-    .hero img {
-        width: 40%
-    }
-    .verticle-line {
-    margin: 0 10px;
-    font-size: 44px;
-}
-}
-@media all and (max-width:450px) {
-    .hero img {
-        width: 100%
-    }
-    .verticle-line {
-    margin: 0 10px;
-    font-size: 44px;
-}
-}
-
-
 @keyframes titleAnimation {
     0% {
         opacity: 0;
