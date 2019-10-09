@@ -151,14 +151,14 @@ body {
 
 .card {
     box-shadow: 0 4px 8px 0 rgba(2, 2, 2, 0.9);
-    background: rgba(229, 229, 229, 0.68);
+    background: rgba(229, 229, 229, 0.8);
     border-radius: 15px;
 
 
 }
 
 .sponsers {
-    background: rgba(229, 229, 229, 0.68);
+    background: rgba(229, 229, 229, 0.8);
     padding: 4px 4px;
     border-radius: 50px;
     margin: 30px auto;
@@ -888,7 +888,11 @@ textarea {
 /*----FOR FOOTER----*/
 
 .wrap-4 {
-    background: black;
+/*    background: black;*/
+    background-image: url(../images/dew.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     width: 100%;
 }
 
@@ -898,7 +902,6 @@ textarea {
 
 #signin {
     padding: 20px;
-    background-color: #E6E6E6;
     color: black;
     width: 450px;
     border-radius: 10px;
@@ -910,14 +913,15 @@ textarea {
 
 .fa-instagram {
     display: inline-block;
-    width: 40px;
-    height: 40px;
+    width: 42px;
+    height: 42px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
     color: #fff;
     line-height: 56px;
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 7px;
+    padding-right: 10px;
     padding-top: 5px;
     margin: auto;
     background: black;
@@ -935,7 +939,8 @@ textarea {
     width: 40px;
     height: 40px;
     text-align: center;
-    border-radius: 5px;
+    border-radius: 50%;
+    border: 1px solid white;
     color: #fff;
     line-height: 56px;
     padding-left: 8px;
@@ -944,6 +949,8 @@ textarea {
     margin: auto;
     background: black;
     margin-right: 10px;
+    margin-left: 33%;
+    text-align: center
 }
 
 #faa {
