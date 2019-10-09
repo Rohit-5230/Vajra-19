@@ -856,10 +856,17 @@ hr.style15:after {
 
 
 video {
-    width: 100%;
+    max-width: 100%;
     height: auto;
   }
 
+  #Brochure {
+    background: url("../images/brochure-bg.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 0 0;
+    position: relative;
+  }
+  
   /* Facts Section
 --------------------------------*/
 
