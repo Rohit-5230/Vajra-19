@@ -871,7 +871,7 @@ video {
 --------------------------------*/
 
 #facts {
-    background: url("../images/facts-bg.jpg") center top no-repeat fixed;
+    background: url("../images/facts-bg2.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 0 0;
     position: relative;
@@ -897,7 +897,7 @@ video {
     font-weight: bold;
     font-size: 48px;
     display: block;
-    color:blue;
+    color:lightgreen;
   }
   
   #facts .counters p {
@@ -905,13 +905,105 @@ video {
     margin: 0 0 20px 0;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    color: #111;
+    color:yellow;
   }
   
   #facts .facts-img {
     text-align: center;
     padding-top: 30px;
   }
+  
+
+  /*Contact Section */
+
+  .fa {
+    padding:10px;
+    font-size: 35px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 30%;
+    
+  }
+  
+  fa:hover {
+    opacity: 2.5;
+    color:black;
+  }
+  
+  
+  .fa-facebook {
+  
+    color: white;
+   
+  }
+  
+  #last{
+    background-color:black;
+    color:white;
+    margin: 0;
+  }
+  #signin{
+    padding:20px;
+    background-color:#E6E6E6;
+    color:black;
+    width:500px;
+    border-radius:10px;
+  }
+  .form-control{
+    background-color:white;
+    width:450px;
+  }
+  #contacting{
+    padding:40px;
+  }
+  #designation{
+    width:450px;
+    height:30px;
+    border-radius:5px;
+  }
+  .fa-instagram {
+    
+    color: white;
+  }
+  .empty {
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+  }
+  
+  #signup_form{
+    padding:40px;
+    width:500px;
+  }
+  
+  @media all and (max-width:450px){
+    .col{
+        width:100%;
+        padding:0;
+     
+    }
+    #signin{
+       width:100%;
+       padding: 0;
+       border-radius:4px;
+    }
+  
+    #designation{
+      width:100%;
+      padding:0;
+    }
+    .form-control{
+      width:100%;
+      padding:0;
+    }
+  }
+  .wrap-back{
+    background-color: black;
+    
+  } 
   
 
 /*------DO NOT TOUCH---SCROLL ANIMATION----AFTER THIS LINE--------------------- */
