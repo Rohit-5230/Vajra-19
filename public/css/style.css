@@ -788,11 +788,11 @@ html {
   }
   .wrap-5
   {
-      background-image: url("../images/attractive-backdrop-background-988872.jpg");
+      background-image: url("../images/about\ us-bg.jpg");
       
   }
   #gallery{
-    background: url("../images/pierre-chatel-innocenti-MQEfVi_HMCk-unsplash.jpg") center top no-repeat fixed;
+    background: url("../images/glimses-bg.jpg") center top no-repeat fixed;
       background-size: cover;
       padding: 60px 0 0 0;
       position: relative;
@@ -831,11 +831,40 @@ hr.style15:after {
     position: relative;
 
 }
+
+#aftermovie{
+    background: url("../images/aftermovie-bg.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 0 0;
+    position: relative;
+
+}
+
+#testimonials{
+    background: url("../images/.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 0 0;
+    position: relative;
+}
+
+#nights{
+    background: url("../images/.jpg") center top no-repeat fixed;
+    background-size: cover;
+    padding: 60px 0 0 0;
+    position: relative;
+}
+
+
+video {
+    width: 100%;
+    height: auto;
+  }
+
   /* Facts Section
 --------------------------------*/
 
 #facts {
-    background: url("../images/e5323d1c08ce5a9991240b481ba34c11.jpg") center top no-repeat fixed;
+    background: url("../images/facts-bg.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 0 0;
     position: relative;
