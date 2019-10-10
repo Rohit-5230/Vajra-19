@@ -894,6 +894,7 @@ textarea {
     background-position: center;
     background-size: cover;
     width: 100%;
+    padding: 4% 0 6% 0;
 }
 
 #signup_form {
@@ -976,6 +977,11 @@ textarea {
         padding: 0;
     }
 }
-
+.line {
+    border-top: 2px solid aliceblue;
+    width: 50px;
+    margin: auto;
+    
+}
 
 /*----END FOOTER----*/
