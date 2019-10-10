@@ -31,7 +31,7 @@
                 <a href="#">CONTACT US</a>
             </div>
         </div>
-        <div class='navbar1'>
+        <div class='navbar1' id="naa">
             <div class='container-fluid'>
                <img id="sc2" src="images/flogo.jpg" alt="">
                 <span style="font-size:2.4em;cursor:pointer;float:right; color:white; " onclick="openNav()" class="glow">&#9776; Menu</span>
@@ -721,15 +721,18 @@
     </div>
     <div class="wrap-4">
         <div class="container">
-            <div class="row">
+            <div class="row col-xs-12">
+                <h3 style="color:aliceblue;font-size: 3em;text-align: center;letter-spacing: 2px"><strong>CONTACT US</strong></h3><hr class="line"></div>
+               <div class="row">
                 <div class="col-md-6 col-xs-12" id="contacting">
-                    <h3 style="color:green;font-size: 29px;text-align: left"><strong>Contact Us</strong></h3><br>
+                    <br>
                     <div class="row">
+                       
                         <div class="col-xs-1">
                             <i class="fa fa-map-marker" id="faa"></i>
                         </div>
                         <div class="col-xs-11">
-                            <strong style="color:white;font-size: 25px;">Vajra Office, BIT Mesra - 835215</strong>
+                            <strong style="color:#C0C0C0;font-size: 1.5em;">Vajra Office, BIT Mesra - 835215</strong>
                         </div>
                     </div>
                     <br><br>
@@ -738,7 +741,7 @@
                             <i class="fa fa-phone" id="faa"></i>
                         </div>
                         <div class="col-xs-11">
-                            <strong style="color:white;font-size: 25px;"><a href="tel:+917651929150" style="color:#C0C0C0;">+91-7651929150</a></strong>
+                            <strong style="color:white;font-size:1.5em;"><a href="tel:+917651929150" style="color:#C0C0C0;">+91-7651929150</a></strong>
                         </div>
                     </div>
                     <br><br>
@@ -747,11 +750,11 @@
                             <i class="fa fa-envelope" id="faa"></i>
                         </div>
                         <div class="col-xs-11">
-                            <strong style="color:white;font-size: 25px;"><a href="mailto:vajra@bitmesra.ac.in" style="color:#C0C0C0;">vajra@bitmesra.ac.in</a></strong>
+                            <strong style="color:white;font-size:1.5em;"><a href="mailto:vajra@bitmesra.ac.in" style="color:#C0C0C0;">vajra@bitmesra.ac.in</a></strong>
                         </div>
-                    </div>
-                    <br><br><br>
-                    <h3 style="color:green;font-size: 29px;text-align: left"><strong>Follow Us</strong></h3><br>
+                    </div><br>
+
+                   <br><br>
                     <div class="row">
                         <div class="col-sm-12">
                             <a href="https://www.facebook.com/vajra.bitm/" target="_blank">
@@ -764,30 +767,27 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-xs-12" id="signup_form">
-                    <h3 style="color:green;font-size: 29px;text-align: left"><strong>Get In Touch</strong></h3>
+
                     <div class="row">
                         <form action="/action_page.php" id="signin">
 
-                            <label for="email">Email address:</label>
                             <input type="email" class="form-control empty" id="email" placeholder="&#x0040; Enter the email">
                             <br>
-                            <label for="name">Name:</label>
                             <input type="text" class="form-control empty" id="name" placeholder="&#x1F464; Enter the name">
                             <br>
-                            <label for="designation">Designation:</label>
-                            <br>
-                            <select class="form-control" id="exampleFormControlSelect1">
+                            <select required class="form-control empty" id="exampleFormControlSelect1"> 
+                               <option value="">--Select Your Designation--</option>
                                 <option>Player</option>
                                 <option>Captain</option>
+                                <option>Others</option>
+                                
                             </select>
                             <br>
-                            <label for="institute">Institute Name:</label>
                             <input type="text" class="form-control empty" id="institute" placeholder="&#x1F3EB; Enter the college name">
                             <br>
-                            <label for="phone">Phone Number:</label>
                             <input type="text" class="form-control empty" id="phone" placeholder="&#x1F4DE; Enter the phone number">
                             <br>
-                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button style="background:orange;border: none;width: 22%;float: right;border-radius: 0" type="submit" class="btn btn-primary">Submit</button>
 
                         </form>
                     </div>
@@ -802,7 +802,8 @@
     <script src="js/scroll_script.js"></script>
 
     <script src="js/gallery.js"></script>
-
+    <!--  FOR NAV BAR  -->
+    
 </body>
 
 </html>
