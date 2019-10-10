@@ -3,10 +3,13 @@
 
 function openModal() {
     document.getElementById("myModal").style.display = "block";
+    document.getElementById("naa").style.display = "none";
+    
 }
 
 function closeModal() {
     document.getElementById("myModal").style.display = "none";
+    document.getElementById("naa").style.display = "block";
 }
 
 var slideIndex = 1;
@@ -41,3 +44,11 @@ function showSlides(n) {
     dots[slideIndex - 1].className += " active";
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
+
+ function openNav() {
+            document.getElementById("myNav").style.width = "100%";
+        }
+
+        function closeNav() {
+            document.getElementById("myNav").style.width = "0%";
+        }
