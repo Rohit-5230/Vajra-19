@@ -11,13 +11,9 @@ body{
     height:100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-}
-
-
-.container-fluid {
     padding-left: 110px;
     padding-right: 110px;
-  }
+}
 
   @media all and (max-width:700px){
       .container{
@@ -44,43 +40,10 @@ body{
     src: url("../font/Product Sans Regular.ttf") format("opentype");
 }
 
-.fa {
-  padding:10px;
-  font-size: 35px;
-  width: 50px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 30%;
-  
-}
+.wrap-back{
+  background-color: black;
+} 
 
-fa:hover {
-  opacity: 2.5;
-  color:black;
-}
-
-.fa-facebook {
-  
-  color: white;
- 
-}
-
-
-.fa-google {
-  
-  color: white;
-}
-
-.fa-envelope{
-  
-  color:white;
-}
-
-.fa-instagram {
-
-  color: white;
-}
 #last{
   background-color:black;
   color:white;
@@ -90,19 +53,21 @@ fa:hover {
   padding:20px;
   background-color:#E6E6E6;
   color:black;
-  width:450px;
+  width:500px;
   border-radius:10px;
 }
 .form-control{
   background-color:white;
-  width:400px;
+  width:450px;
+  font-size:25px;
 }
 #contacting{
   padding:40px;
+  font-size:26px;
 }
 #designation{
-  width:400px;
-  height:40px;
+  width:450px;
+  height:30px;
   border-radius:5px;
 }
 
@@ -111,11 +76,51 @@ fa:hover {
   font-style: normal;
   font-weight: normal;
   text-decoration: inherit;
+ 
+}
+
+.fa {
+  padding:10px;
+  font-size: 40px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20%;
+  
+}
+
+fa:hover {
+  opacity: 2.5;
+  color:black;
+}
+
+
+.fa-facebook {
+  color: white;
+  width:40px;
+  height:45px;
+  padding-left:10px;
+  display: inline-block;
+}
+
+.fa-instagram{
+  display: inline-block;
+  height:45px;
+  width:40px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  padding-left:8px;
+  
+ 
 }
 
 #signup_form{
   padding:40px;
-  width:50%;
+  width:500px;
+  font-size:20px;
 }
 
 @media all and (max-width:450px){
@@ -139,7 +144,6 @@ fa:hover {
     padding:0;
   }
 }
-
 /*FOR NAVBAR*/
 
 body {
@@ -161,7 +165,7 @@ body {
 }
 .wrap{
     background-color:black;
-    height:10vh;
+    height:9.5vh;
     position:fixed;
     top:0;
     width:100%;
@@ -209,3 +213,6 @@ body {
   right: 1%;
   }
 }
+
+
+

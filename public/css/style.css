@@ -92,7 +92,6 @@ body {
   }
 
 
-  
 
 
 /*---------------------------for Carousel---------------------------------------*/
@@ -788,7 +787,7 @@ html {
   }
   .wrap-5
   {
-      background-image: url("../images/about\ us-bg.jpg");
+      background-image: url("../images/about\ us-bg2.jpg");
       
   }
   #gallery{
@@ -806,7 +805,7 @@ html {
     height: 100%;
 }
 
-/* FOR THE BORDER LINES BELOW THE WRITTEN PART */
+/* FOR THE BORDER LINES BELOW IS THE WRITTEN PART */
 
 hr.style15 {
 	border-top: 6px double #070303f8;
@@ -825,7 +824,7 @@ hr.style15:after {
 }
 
 #past_sponsers{
-    background: url("../images/sponsers-bg.jpg") center top no-repeat fixed;
+    background: url("../images/about\ us-bg2.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 0 0;
     position: relative;
@@ -861,7 +860,7 @@ video {
   }
 
   #Brochure {
-    background: url("../images/brochure-bg.jpg") center top no-repeat fixed;
+    background: url("../images/about\ us-bg2.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 0 0;
     position: relative;
@@ -871,7 +870,7 @@ video {
 --------------------------------*/
 
 #facts {
-    background: url("../images/facts-bg2.jpg") center top no-repeat fixed;
+    background: url("../images/.jpg") center top no-repeat fixed;
     background-size: cover;
     padding: 60px 0 0 0;
     position: relative;
@@ -897,7 +896,7 @@ video {
     font-weight: bold;
     font-size: 48px;
     display: block;
-    color:lightgreen;
+    color:green;
   }
   
   #facts .counters p {
@@ -905,7 +904,7 @@ video {
     margin: 0 0 20px 0;
     font-family: "Montserrat", sans-serif;
     font-size: 14px;
-    color:yellow;
+    color:black;
   }
   
   #facts .facts-img {
@@ -1004,7 +1003,7 @@ video {
     background-color: black;
     
   } 
-  
+
 
 /*------DO NOT TOUCH---SCROLL ANIMATION----AFTER THIS LINE--------------------- */
 @charset "UTF-8";/*!
