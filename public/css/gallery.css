@@ -20,9 +20,9 @@ img {
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
 @font-face {
-    font-family: "product-sans-regular";
-    src: url("../font/Product Sans Regular.ttf") format("opentype");
-}
+    font-family: "nexa";
+    src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
+  }
 
 }
 
@@ -37,14 +37,14 @@ body {
     margin: 0;
     box-sizing: border-box;
     font-family: cursive;
-    font-family: "product-sans-regular";
+    font-family: "nexa";
 
 }
 
 /*FOR NAVBAR*/
 
 body {
-    font-family: 'Lato', sans-serif;
+    font-family: "nexa";
 }
 
 .overlay {
@@ -432,7 +432,7 @@ img.hover-shadow {
 /* reset */
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
-    font-family: sans-serif;
+    font-family: 'nexa';
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%
 }
