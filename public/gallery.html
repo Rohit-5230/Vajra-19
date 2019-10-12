@@ -833,7 +833,7 @@
                             <br>
                             <input type="text" class="form-control empty" id="phone" placeholder="&#x1F4DE; Enter the phone number">
                             <br>
-                            <button style="background:orange;border: none;width: 22%;float: right;border-radius: 0" type="submit" class="btn btn-primary">Submit</button>
+                            <button style="background:orange;border: none;width: 22%;float: right;border-radius: 0" type="submit" class="btn btn-primary" onclick="contact_us()" >Submit</button>
 
                         </form>
                     </div>
@@ -848,6 +848,39 @@
     <script src="js/scroll_script.js"></script>
 
     <script src="js/gallery.js"></script>
+    <script>
+    function contact_us(){    
+    let collegeName=document.getElementById("institute").value;
+    let email=document.getElementById("email").value;
+    let name=document.getElementById("name").value;
+    let designation = document.getElementById("exampleFormControlSelect1").value;
+    let phone =document.getElementById("phone").value;
+
+            let contUs={
+                "collegeName":collegeName,
+                "email":email,
+                "name":name,
+                "designation":designation,
+                "phone":phone
+            }
+
+            console.log(contUs);
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    </script>
     <!--  FOR NAV BAR  -->
     
 </body>
