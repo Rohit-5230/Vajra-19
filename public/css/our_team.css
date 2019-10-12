@@ -22,16 +22,19 @@ body{
       }
   }
 
-  .imgt {
-    border-radius:15px;
+  @media all and (max-width:450px){
+    .head{
+      font-size:3em;
+    }
+  }
+
+  img {
+    
     border: solid 12px lightgreen;
     box-shadow: 0 30px 25px 0 rgba(2,2,2,0.9);
     background:rgba(75, 59, 59, 0.68);
     
   }
-
- 
-
 
   .wrap-back{
     background-color: black;
@@ -97,7 +100,7 @@ body{
 }
 
 fa:hover {
-  opacity: 2.5;
+  opacity: 5;
   color:black;
 }
 
@@ -171,7 +174,7 @@ body {
 }
 .wrap{
     background-color:black;
-    height:8vh;
+    height:9vh;
     position:fixed;
     top:0;
     width:100%;
