@@ -19,28 +19,43 @@
   <div class="wrap">
       <div id="myNav" class="overlay">
               <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-              <div class="overlay-content text-center"">
-                <a href="index.html">HOME</a>
-                <a href="#about_us">ABOUT US</a>
-                <a href="events.html">EVENTS</a>
-                <a href="images/GeneralRules.pdf">RULEBOOK</a>
-                <a href="guests.html">GUESTS</a>
-                <a href="sponsors.html">SPONSERS</a>
-                <a href="gallery.html">GALLERY</a>
-                <a href="our_team.html">OUR TEAM</a>
-                <a href="#">CONTACT US</a>
+              <div class="overlay-content text-center">
+                <a href="index.html" onclick="closeNav()">HOME</a>
+                <a href="index.html#aboutus" onclick="closeNav()">ABOUT US</a>
+                <a href="events.html#events" onclick="closeNav()">EVENTS</a>
+                <a href="images/GeneralRules.pdf" onclick="closeNav()">RULEBOOK</a>
+                <a href="sponsors.html#sponsors" onclick="closeNav()">SPONSORS</a>
+                <a href="gallery.html#gallery" onclick="closeNav()">GALLERY</a>
+                <a href="our_team.html" onclick="closeNav()">OUR TEAM</a>
+                <a href="#contact" onclick="closeNav()">CONTACT US</a>
               </div>
             </div>
 
   <div class='navbar1'>
       <div class='container-fluid'>
-          <span style="font-size:2em;cursor:pointer;float:right; color:white; " onclick="openNav()">&#9776;  Menu</span>
+          <span style="font-size:2em;cursor:pointer;float:right; color:white; " onclick="openNav()">&#9776; </span>
       </div>
   </div>
       
 </div>
 
-<br><br>
+<div class="wrap-2">
+    <span class="hero">
+      <div class='imgt'>
+      <img src="images/11.png" alt="Vajra19">
+      </div>
+    </span>
+    <div class="slideshow" style="height: 100vh">
+        <div class="slideshow-image" style="background-image: url('images/11.jpg');background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;"></div>
+
+
+    </div>
+</div>
+
+
   
   <section id='our_team'>
         
@@ -960,6 +975,7 @@ class="img-fluid" style='height:265px' />
 
 </section>
 
+<section id = 'contact'>
 <div class='footer'>
 <div class="wrap-4">
    <div class='container-fluid'>
@@ -1051,7 +1067,7 @@ class="img-fluid" style='height:265px' />
 </div>
 </div>
 
-
+</section>
 
 
 <script>

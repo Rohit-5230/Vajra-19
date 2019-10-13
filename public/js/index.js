@@ -1,3 +1,5 @@
+var bas=1;
+
 $(function () {
     $(".hamburger").click(function (e) {
         $(".hamburger").toggleClass("is-active");
@@ -45,7 +47,7 @@ function move2() {
         } else {
             width++;
             elem.style.width = width + '%';
-            elem.innerHTML = width * 330 + '+';
+            elem.innerHTML = width * 34 + '+';
         }
     }
 }
@@ -83,6 +85,7 @@ function move4() {
 }
 
 var isInViewport = function (elem) {
+    if(bas!=0){
     var bounding = elem.getBoundingClientRect();
     return (
         bounding.top >= 0 &&
@@ -90,6 +93,7 @@ var isInViewport = function (elem) {
         bounding.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
         bounding.right <= (window.innerWidth || document.documentElement.clientWidth)
     );
+    }
 };
 
 var nms = document.getElementById("myBar3");
@@ -100,6 +104,7 @@ window.addEventListener('scroll', function (event) {
         move3();
         move4();
         nms = 0;
+        bas=0;
     }
 }, false);
 /////BUTTONS
