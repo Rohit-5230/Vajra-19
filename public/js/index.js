@@ -14,6 +14,7 @@ function closeNav() {
     document.getElementById("myNav").style.width = "0%";
 }
 
+
 //For facts and figures
 
 function move() {

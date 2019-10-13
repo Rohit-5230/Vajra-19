@@ -12,7 +12,8 @@
     <link rel="stylesheet" href="css/bootstrap-3.4.1-dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/scroll_animation.min.css">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">'
+    
     <!-- Start (For Glimpses) -->
     <link href="css/Icomoon/style.css" rel="stylesheet" type="text/css" />
     <link href="css/responsive-layered-slider.css" rel="stylesheet" type="text/css" />
@@ -28,14 +29,14 @@
     <div class="wrap">
         <div id="myNav" class="overlay">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-            <div class="overlay-content text-center">
-                <a href="#">ABOUT US</a>
-                <a href="#">EVENTS</a>
-                <a href="#">RULEBOOK</a>
-                <a href="#">SPONSERS</a>
-                <a href="gallery.html">GALLERY</a>
-                <a href="our_team.html">OUR TEAM</a>
-                <a href="#">CONTACT US</a>
+            <div class="overlay-content text-center" id="nav-item">
+                <a href="#" onclick="closeNav()" style="font-family: nexa">ABOUT US</a>
+                <a href="events.html" onclick="closeNav()" style="font-family: nexa">EVENTS</a>
+                <a href="images/GeneralRules.pdf" onclick="closeNav()" style="font-family: nexa">RULEBOOK</a>
+                <a href="sponsors.html" onclick="closeNav()" style="font-family: nexa">SPONSERS</a>
+                <a href="gallery.html" onclick="closeNav()" style="font-family: nexa">GALLERY</a>
+                <a href="our_team.html" onclick="closeNav()" style="font-family: nexa">OUR TEAM</a>
+                <a href="#contact" onclick="closeNav()" style="font-family: nexa">CONTACT US</a>
             </div>
         </div>
         <div class='navbar1' id="naa">
@@ -45,6 +46,9 @@
             </div>
         </div>
     </div>
+
+
+       
     <div class="wrap-2">
         <span class="hero"><img src="images/11.png" alt="Vajra19"></span>
         <div class="slideshow" style="height: 100vh">
@@ -70,11 +74,11 @@
             </div>
             <br><br>
             <div class="col-md-4 col-xs-1"></div>
-            <center>
+            
             <div class="row col-xs-12">
                 <iframe width="60%" height="315px" src="https://www.youtube.com/embed/-JMtKCqnkm0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            </center>
+            
         </div>
         <br><br><br>
     </div>
@@ -146,6 +150,14 @@
                                         <div class="sim-slider-layer" data-effect="fadeInDown" data-width="1019" data-height="848" data-left="770" data-top="277"><img src="images/v3.jpg" /></div> 
                                         <div class="sim-slider-layer" data-effect="fadeInRight" data-width="694" data-height="841" data-left="1811" data-top="277"><img src="images/v4.jpg" /></div>
                                         </div>
+
+
+                                        <div class="sim-slider-slide">
+                                        
+                                                <div class="sim-slider-layer" data-effect="fadeInLeft" data-width="694" data-height="841" data-left="54" data-top="277"><img src="images/v2.jpg" /></div> 
+                                                <div class="sim-slider-layer" data-effect="fadeInDown" data-width="1019" data-height="848" data-left="770" data-top="277"><img src="images/v3.jpg" /></div> 
+                                                <div class="sim-slider-layer" data-effect="fadeInRight" data-width="694" data-height="841" data-left="1811" data-top="277"><img src="images/v4.jpg" /></div>
+                                                </div>
                 </div>
             </div>
         </div>
@@ -237,6 +249,7 @@
         </div>
     </div>
 
+    <section id='contact'>
     <div class="wrap-9">
         <div class="container">
             <div class="row col-xs-12">
@@ -291,9 +304,9 @@
                     <div class="row">
                         <form action="/action_page.php" id="signin">
 
-                            <input type="email" class="form-control empty" id="email" placeholder="&#x0040; Enter the email">
+                            <input type="email" class="form-control empty" id="email" placeholder="&#x0040; Enter the Email">
                             <br>
-                            <input type="text" class="form-control empty" id="name" placeholder="&#x1F464; Enter the name">
+                            <input type="text" class="form-control empty" id="name" placeholder="&#x1F464; Enter the Name">
                             <br>
                             <select required class="form-control empty" id="exampleFormControlSelect1">
                                 <option value="">--Select Your Designation--</option>
@@ -303,9 +316,9 @@
 
                             </select>
                             <br>
-                            <input type="text" class="form-control empty" id="institute" placeholder="&#x1F3EB; Enter the college name">
+                            <input type="text" class="form-control empty" id="institute"  placeholder="&#x1F3EB; Enter The College Name">
                             <br>
-                            <input type="text" class="form-control empty" id="phone" placeholder="&#x1F4DE; Enter the phone number">
+                            <input type="text" class="form-control empty" id="phone" placeholder="&#x1F4DE; Enter The Phone Number">
                             <br>
                             <button style="background:orange;border: none;width: 22%;float: right;border-radius: 0" type="submit" class="btn btn-primary">Submit</button>
 
@@ -315,6 +328,7 @@
             </div>
         </div>
     </div>
+    </section>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="css/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
