@@ -3,18 +3,273 @@
   src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
 }
 
-/*-----=------FOR CROUSELS--------*/
+
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family:"nexa","curly";
+
+}
+#our_team{
+    background-image: url("../images/back.jpg");
+    background-size:cover;
+    width: 100%;
+    height:100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    padding-left: 110px;
+    padding-right: 110px;
+}
+
+  @media all and (max-width:700px){
+      #our_team{
+        padding-left: 60px;
+        padding-right: 60px;
+      }
+  }
+
+  @media all and (max-width:450px){
+    .head{
+      font-size:3em;
+    }
+  }
+
+  img {
+    
+    border: solid 5.5px brown;
+    box-shadow: 0 30px 25px 0 rgba(2,2,2,0.9);
+    background:rgba(75, 59, 59, 0.68);
+    
+  }
+
+ 
+  
+ 
+
+
+
+
+.fa {
+  padding:10px;
+  font-size: 40px;
+  width: 35px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 20%;
+  
+}
+
+
+
+.fa-facebook {
+  color: white;
+  width:40px;
+  height:45px;
+  padding-left:10px;
+  display: inline-block;
+}
+
+.fa-instagram{
+  display: inline-block;
+  height:45px;
+  width:40px;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  line-height: 26px;
+  padding-left:8px;
+  
+ 
+}
+
+/*FOR NAVBAR*/
+
+
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  left:0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+ 
+}
+.wrap{
+    background-color:black;
+    height:9vh;
+    position:fixed;
+    top:0;
+    width:100%;
+    z-index:1000;
+          
+}  
+
+
+.overlay-content {
+  position: relative;
+  top: 12%;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color:blueviolet;
+  display: block;
+  transition: 0.3s;
+  text-align:center;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 0%;
+  right: 1%;
+  font-size: 40px;
+  color:whitesmoke;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 10px}
+  .overlay .closebtn {
+  font-size: 10px;
+  top: 0%;
+  right: 1%;
+  }
+}
+
+
+/*----FOR FOOTER----*/
+
+.wrap-4 {
+  /*    background: black;*/
+      background-image: url(../images/dew.png);
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      width: 100%;
+      padding: 4% 0 2% 10%;
+  }
+  
+  #signup_form {
+      padding: 40px;
+  }
+  
+  #signin {
+      padding: 20px;
+      color: black;
+      width: 450px;
+      border-radius: 10px;
+      background: transparent;
+      
+  }
+  
+  #contacting {
+      padding: 40px;
+  }
+  
+  .fa-instagram {
+      display: inline-block;
+      width: 42px;
+      height: 42px;
+      text-align: center;
+      
+       color: #fff;
+      padding-left: 7px;
+      padding-right: 10px;
+      padding-top: 5px;
+      margin: auto;
+      background: black;
+      box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
+  }
+  
+  .empty {
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+  }
+  
+  .fb {
+      display: inline-block;
+      width: 40px;
+      height: 40px;
+      text-align: center;
+      
+     
+      color: #fff;
+      padding-left: 8px;
+      padding-right: 10px;
+      padding-top: 5px;
+      margin: auto;
+      background: black;
+      margin-right: 14px;
+      margin-left: 33%;
+      
+  }
+  
+  #faa {
+      color: white;
+      font-size: 29px;
+  }
+  
+  @media all and (max-width:450px) {
+
+    .wrap-4{
+      width:100%;
+    }
+  
+      #signin {
+          width: 100%;
+          padding: 10px;
+          border-radius: 4px;
+          
+      }
+  
+      #designation {
+          width: 100%;
+          padding: 0;
+      }
+
+     
+  
+      .form-control {
+          width: 100%;
+          padding: 0;
+      }
+  }
+  .line {
+      border-top: 2px solid aliceblue;
+      width: 50px;
+      margin: auto;
+  }
+    
+     
+  }
+  
+  /*----END FOOTER----*/
+  /*-----=------FOR CROUSELS--------*/
 
 /* reset */
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
-html {
-  font-family: 'nexa';
-  -ms-text-size-adjust: 100%;
-  -webkit-text-size-adjust: 100%
-}
+
 
 body {
-  margin: 0
+  margin: 0;
+    font-family: 'nexa';
 }
 .wrap-2{
   background-image: url(../images/11.jpg);
@@ -26,20 +281,7 @@ body {
   height:100vh;
 }
 
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  display: block
-}
+
 
 audio,
 canvas,
@@ -121,9 +363,7 @@ sup {
   top: -0.5em
 }
 
-img {
-  border-style: none
-}
+
 
 svg:not(:root) {
   overflow: hidden
@@ -137,9 +377,6 @@ samp {
   font-size: 1em
 }
 
-figure {
-  margin: 1em 40px
-}
 
 hr {
   -webkit-box-sizing: content-box;
@@ -580,10 +817,14 @@ textarea {
       width: 77%
   }
 }
-img{
+#cr{
   vertical-align: bottom;
   max-width: 100%;
+    border: none;
+    box-shadow: none;
+    background: none;
 }
+    
 #sc2 {
   width: 8%;
 }
@@ -620,262 +861,3 @@ img{
 
 /*--------------------------END OF CROUSEL---------------------------*/
 
-
-
-body{
-    margin: 0;
-    padding: 0;
-    font-family:"nexa","curly";
-
-}
-#our_team{
-    background-image: url("../images/back.jpg");
-    background-size:cover;
-    width: 100%;
-    height:100%;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    padding-left: 110px;
-    padding-right: 110px;
-}
-
-  @media all and (max-width:700px){
-      #our_team{
-        padding-left: 60px;
-        padding-right: 60px;
-      }
-  }
-
-  @media all and (max-width:450px){
-    .head{
-      font-size:3em;
-    }
-  }
-
-  img {
-    
-    border: solid 5.5px brown;
-    box-shadow: 0 30px 25px 0 rgba(2,2,2,0.9);
-    background:rgba(75, 59, 59, 0.68);
-    
-  }
-
- 
-  
- 
-
-
-
-
-.fa {
-  padding:10px;
-  font-size: 40px;
-  width: 35px;
-  text-align: center;
-  text-decoration: none;
-  margin: 5px 2px;
-  border-radius: 20%;
-  
-}
-
-
-
-.fa-facebook {
-  color: white;
-  width:40px;
-  height:45px;
-  padding-left:10px;
-  display: inline-block;
-}
-
-.fa-instagram{
-  display: inline-block;
-  height:45px;
-  width:40px;
-  text-align: center;
-  color: #fff;
-  font-size: 20px;
-  line-height: 26px;
-  padding-left:8px;
-  
- 
-}
-
-/*FOR NAVBAR*/
-
-
-
-.overlay {
-  height: 100%;
-  width: 0;
-  position: fixed;
-  z-index: 300;
-  top: 0;
-  left:0;
-  background-color: rgb(0,0,0);
-  background-color: rgba(0,0,0, 0.9);
-  overflow-x: hidden;
-  transition: 0.5s;
- 
-}
-.wrap{
-    background-color:black;
-    height:9vh;
-    position:fixed;
-    top:0;
-    width:100%;
-    z-index:1000;
-          
-}  
-
-
-.overlay-content {
-  position: relative;
-  top: 12%;
-  width: 100%;
-  text-align: center;
-  margin-top: 1em;
-}
-
-.overlay a {
-  padding: 8px;
-  text-decoration: none;
-  font-size: 30px;
-  color:blueviolet;
-  display: block;
-  transition: 0.3s;
-  text-align:center;
-}
-
-
-.overlay a:hover, .overlay a:focus {
-  color: #f1f1f1;
-}
-
-.overlay .closebtn {
-  position: absolute;
-  top: 0%;
-  right: 1%;
-  font-size: 40px;
-  color:whitesmoke;
-}
-
-@media screen and (max-height: 450px) {
-  .overlay a {font-size: 10px}
-  .overlay .closebtn {
-  font-size: 10px;
-  top: 0%;
-  right: 1%;
-  }
-}
-
-
-/*----FOR FOOTER----*/
-
-.wrap-4 {
-  /*    background: black;*/
-      background-image: url(../images/dew.png);
-      background-repeat: no-repeat;
-      background-position: center;
-      background-size: cover;
-      width: 100%;
-      padding: 4% 0 2% 10%;
-  }
-  
-  #signup_form {
-      padding: 40px;
-  }
-  
-  #signin {
-      padding: 20px;
-      color: black;
-      width: 450px;
-      border-radius: 10px;
-      background: transparent;
-      
-  }
-  
-  #contacting {
-      padding: 40px;
-  }
-  
-  .fa-instagram {
-      display: inline-block;
-      width: 42px;
-      height: 42px;
-      text-align: center;
-      
-       color: #fff;
-      padding-left: 7px;
-      padding-right: 10px;
-      padding-top: 5px;
-      margin: auto;
-      background: black;
-      box-shadow: 0px 3px 10px rgba(0, 0, 0, .25);
-  }
-  
-  .empty {
-      font-style: normal;
-      font-weight: normal;
-      text-decoration: inherit;
-  }
-  
-  .fb {
-      display: inline-block;
-      width: 40px;
-      height: 40px;
-      text-align: center;
-      
-     
-      color: #fff;
-      padding-left: 8px;
-      padding-right: 10px;
-      padding-top: 5px;
-      margin: auto;
-      background: black;
-      margin-right: 14px;
-      margin-left: 33%;
-      
-  }
-  
-  #faa {
-      color: white;
-      font-size: 29px;
-  }
-  
-  @media all and (max-width:450px) {
-
-    .wrap-4{
-      width:100%;
-    }
-  
-      #signin {
-          width: 100%;
-          padding: 10px;
-          border-radius: 4px;
-          
-      }
-  
-      #designation {
-          width: 100%;
-          padding: 0;
-      }
-
-     
-  
-      .form-control {
-          width: 100%;
-          padding: 0;
-      }
-  }
-  .line {
-      border-top: 2px solid aliceblue;
-      width: 50px;
-      margin: auto;
-  }
-    
-     
-  }
-  
-  /*----END FOOTER----*/
-  
