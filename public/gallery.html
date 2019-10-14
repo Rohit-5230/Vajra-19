@@ -52,11 +52,11 @@
 
  <section id='gallery'>   
     <div class="wrap-3">
-        <div class="container">
+        <div class="container-fluid">
             <br>
             <div class="row ">
                 <div class="col-md-12 col-xs-12 sponsers wow fadeIn">
-                    <h1 style="text-align: center;color: indianred"><strong>Flash from the past</strong></h1>
+                    <h1 style="text-align: center;color: indianred"><strong>GALLERY</strong></h1>
                     <hr><br>
                 </div>
                 <div class="col-xs-1"></div>
@@ -64,785 +64,146 @@
 
             <br><br>
 
-            <div class="row">
-                <div class="glass">
-                    <h3><strong>Ceremonial opening <img src="images/openng_icon.png" style="width: 36px" alt=""> </strong> </h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeIn">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
+            <div class="rowt"> 
+                    <div class="column">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v2.jpg" onclick="view('images/v2.jpg')" style="width:100%">
+                      <img src="images/v3.jpg" onclick="view('images/v3.jpg')" style="width:100%">
+                      <img src="images/v4.jpg" onclick="view('images/v4.jpg')" style="width:100%">
+                      <img src="images/v5.jpg" onclick="view('images/v5.jpg')" style="width:100%">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v2.jpg" onclick="view('images/v2.jpg')" style="width:100%">
                     </div>
-                    <br><br>
-                </div>
-
-                         
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-                           
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
+                    <div class="column">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v3.jpg" onclick="view('images/v3.jpg')" style="width:100%">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v2.jpg" onclick="view('images/v2.jpg')" style="width:100%">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                    </div>  
+                    <div class="column">
+                      <img src="images/v2.jpg" onclick="view('images/v2.jpg')" style="width:100%">
+                      <img src="images/v3.jpg" onclick="view('images/v3.jpg')" style="width:100%">
+                      <img src="images/v4.jpg" onclick="view('images/v4.jpg')" style="width:100%">
+                      <img src="images/v4.jpg" onclick="view('images/v4.jpg')" style="width:100%">
+                      <img src="images/v5.jpg" onclick="view('images/v5.jpg')" style="width:100%">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v5.jpg" onclick="view('images/v5.jpg')" style="width:100%">
                     </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Night show <img src="images/dj_icon.png" style="width: 50px;" alt=""></strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeInUp">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
+                    <div class="column">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v3.jpg" onclick="view('images/v3.jpg')" style="width:100%">
+                      <img src="images/v4.jpg" onclick="view('images/v4.jpg')" style="width:100%">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
+                      <img src="images/v4.jpg" onclick="view('images/v4.jpg')" style="width:100%">
+                      <img src="images/v1.jpg" onclick="view('images/v1.jpg')" style="width:100%">
                     </div>
-                    <br><br>
-                    </div>
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Badminton <img src="images/bdmntn_icon.png" style="width: 36px" alt=""></strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeIn">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                <br><br>
-                    </div>
-
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Basketball <img src="images/bakt_icon.png" style="width:  46px" alt=""></strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeInUp">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                    <br><br>
-                    </div>
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Chess <img src="images/chess_icon.png" style="width: 36px" alt=""> </strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeIn">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                <br><br> 
-                    </div>
-
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Cricket <img src="images/crckt_icon.png" style="width: 43px" alt=""></strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeInUp">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                    <br><br>
-                </div>
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Football <img src="images/football_icon.png" style="width: 44px;" alt=""></strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeIn">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                    <br><br>
-                </div>
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Table Tennis <img src="images/tt_icon.png" style="width: 44px" alt=""> </strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeInUp">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                    <br><br>
-                    </div>
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                    <div class='glass'>
-                    <h3><strong>Volleyball <img src="images/volley.png" style="width: 43px;" alt=""> </strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeIn">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                    <br><br>
-                    </div>
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-
-                <div class='glass'>
-                    <h3><strong>Prize-giving <img src="images/award.png" style="width: 44px;" alt=""> </strong></h3>
-                    <hr class="baseline">
-                    <div class="hline wow fadeInUp">
-                        <div class="vline">
-                            <img src="images/v5.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
-                        </div>
-                        <div class="vline">
-                            <img src="images/v4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
-                        </div>
-                    </div>
-                    <br><br>
-                </div>
-                <br><br>
-
-                    <div id="myModal" class="modal">
-                        <span class="close cursor" onclick="closeModal()">&times;</span>
-                        <div class="modal-content">
-
-                            <div class="mySlides">
-                                <div class="numbertext">1 / 4</div>
-                                <img src="images/v5.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">2 / 4</div>
-                                <img src="images/v2.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">3 / 4</div>
-                                <img src="images/v3.jpg" style="width:100%">
-                            </div>
-
-                            <div class="mySlides">
-                                <div class="numbertext">4 / 4</div>
-                                <img src="images/v4.jpg" style="width:100%">
-                            </div>
-
-                            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                            <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
-                            <div class="caption-container">
-                                <p id="caption"></p>
-                            </div>
-
-
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v5.jpg" style="width:100%" onclick="currentSlide(1)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v2.jpg" style="width:100%" onclick="currentSlide(2)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v3.jpg" style="width:100%" onclick="currentSlide(3)" alt="">
-                            </div>
-                            <div class="vline">
-                                <img class="demo cursor" src="images/v4.jpg" style="width:100%" onclick="currentSlide(4)" alt="">
-                            </div>
-                        </div>
-                    </div>
-                    <br><br>
-                </div>
-            </div>
-
+                  </div>
+           </div>
         </div>
     </div>
  </section>
 
 
-    <section id='contact'>
-    <div class="wrap-4">
-        <div class="container">
-            <div class="row col-xs-12">
-                <h3 style="color:aliceblue;font-size: 3em;text-align: center;letter-spacing: 2px"><strong>CONTACT US</strong></h3><hr class="line"></div>
-               <div class="row">
-                <div class="col-md-6 col-xs-12" id="contacting">
-                    <br>
+ <section id='contact'>
+        <div class="wrap-4">
+                <div class="container">
+
+                 
                     <div class="row">
                        
-                        <div class="col-xs-1">
-                            <i class="fa fa-map-marker" id="faa"></i>
+                        <div class="col">
+                            <h3 style="color:aliceblue;font-size: 2.7em;text-align: center;letter-spacing: 2px"><strong>CONTACT US</strong></h3>
+                            <hr class="line">
                         </div>
-                        <div class="col-xs-11">
-                            <strong style="color:#C0C0C0;font-size: 1.5em;">Vajra Office, BIT Mesra - 835215</strong>
-                        </div>
+                        
+                       
                     </div>
-                    <br><br>
+    
                     <div class="row">
-                        <div class="col-xs-1">
-                            <i class="fa fa-phone" id="faa"></i>
-                        </div>
-                        <div class="col-xs-11">
-                            <strong style="color:white;font-size:1.5em;"><a href="tel:+917858933120" style="color:#C0C0C0;">+91-7858933120</a></strong>
-                        </div>
-                    </div>
-                    <br>
-                    <div class="row">
-                            <div class="col-xs-1">
-                                <i class="fa fa-phone" id="faa"></i>
+                        <div class="col-lg-6 col" id="contacting">
+                            <br>
+                            <div class="row">
+    
+                                <div class="co">
+                                    <i class="fa fa-map-marker" id="faa"></i>
+                                </div>
+                                <div class="col">
+                                    <strong style="color:#C0C0C0;font-size: 1.5em;">Vajra Office, BIT Mesra - 835215</strong>
+                                </div>
                             </div>
-                            <div class="col-xs-11">
-                                <strong style="color:white;font-size:1.5em;"><a href="tel:+919534165636" style="color:#C0C0C0;">+91-9534165636</a></strong>
+                            <br><br>
+                            <div class="row">
+                                <div>
+                                    <i class="fa fa-phone" id="faa"></i>
+                                </div>
+                                <div class="col">
+                                    <strong style="color:white;font-size:1.5em;"><a href="tel:+917858933120" style="color:#C0C0C0;">+91-7858933120</a></strong>
+                                </div>
+                            </div>
+                          <br>
+                            <div class="row">
+                                    <div>
+                                        <i class="fa fa-phone" id="faa"></i>
+                                    </div>
+                                    <div class="col">
+                                        <strong style="color:white;font-size:1.5em;"><a href="tel:+919534165636" style="color:#C0C0C0;">+91-9534165636</a></strong>
+                                    </div>
+                                </div>
+                            <br><br>
+                            <div class="row">
+                                <div>
+                                    <i class="fa fa-envelope" id="faa"></i>
+                                </div>
+                                <div class="col">
+                                    <strong style="color:white;font-size:1.5em;"><a href="mailto:vajra@bitmesra.ac.in" style="color:#C0C0C0;">vajra@bitmesra.ac.in</a></strong>
+                                </div>
+                            </div><br>
+    
+                            <br><br>
+                            <div class="row">
+                                <div class="col-lg-12">
+                                    <a href="https://www.facebook.com/vajra.bitm/" target="_blank">
+                                        <i class="fa fa-facebook" id="faa">&nbsp</i>
+                                    </a>
+                                    <a href="https://instagram.com/vajra_19?igshid=7cs8ux0gzhs1" target="_blank">
+                                        <i class="fa fa-instagram" id="faa">&nbsp</i>
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    <br><br>
-                    <div class="row">
-                        <div class="col-xs-1">
-                            <i class="fa fa-envelope" id="faa"></i>
+                        <div class="col-lg-6 col" id="signup_form">
+    
+                            <div class="row">
+                                <form action="/action_page.php" id="signin">
+    
+                                    <input type="email" class="form-control empty placeholder-fix" id="email" placeholder="&#x0040;  Enter Your Email">
+                                    <br>
+                                    <input type="text" class="form-control empty placeholder-fix" id="name" placeholder="&#x1F464; Enter Your Name">
+                                    <br>
+                                    <select required class="form-control empty placeholder-fix" id="exampleFormControlSelect1">
+                                        <option value="">--Select Your Designation--</option>
+                                        <option>Player</option>
+                                        <option>Captain</option>
+                                        <option>Others</option>
+    
+                                    </select>
+                                    <br>
+                                    <input type="text" class="form-control empty placeholder-fix" id="institute" placeholder="&#x1F3EB; Enter Your College Name">
+                                    <br>
+                                    <input type="text" class="form-control empty placeholder-fix" id="phone" placeholder="&#x1F4DE; Enter Your Phone Number">
+                                    <br>
+                                    <button style="background:orange;border: none;width: 29%;float: right;border-radius: 0" type="submit" class="btn btn-primary">Submit</button>
+    
+                                </form>
+                            </div>
                         </div>
-                        <div class="col-xs-11">
-                            <strong style="color:white;font-size:1.5em;"><a href="mailto:vajra@bitmesra.ac.in" style="color:#C0C0C0;">vajra@bitmesra.ac.in</a></strong>
-                        </div>
-                    </div><br>
-
-                   <br><br>
-                    <div class="row">
-                        <div class="col-sm-12">
-                            <a href="https://www.facebook.com/vajra.bitm/" target="_blank">
-                                <i class="fa fa-facebook" id="faa">&nbsp</i>
-                            </a>
-                            <a href="https://instagram.com/vajra_19?igshid=7cs8ux0gzhs1" target="_blank">
-                                <i class="fa fa-instagram" id="faa">&nbsp</i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-xs-12" id="signup_form">
-
-                    <div class="row">
-                        <form action="/action_page.php" id="signin">
-
-                            <input type="email" class="form-control empty placeholder-fix" id="email" placeholder="&#x0040; Enter Your Email">
-                            <br>
-                            <input type="text" class="form-control empty placeholder-fix" id="name" placeholder="&#x1F464; Enter Your Name">
-                            <br>
-                            <select required class="form-control empty" id="exampleFormControlSelect1"> 
-                               <option value="">--Select Your Designation--</option>
-                                <option>Player</option>
-                                <option>Captain</option>
-                                <option>Others</option>
-                                
-                            </select>
-                            <br>
-                            <input type="text" class="form-control empty placeholder-fix" id="institute" placeholder="&#x1F3EB; Enter Your College Name">
-                            <br>
-                            <input type="text" class="form-control empty placeholder-fix" id="phone" placeholder="&#x1F4DE; Enter Your Phone Number">
-                            <br>
-                            <button style="background:orange;border: none;width: 22%;float: right;border-radius: 0" type="submit" class="btn btn-primary" onclick="contact_us()" >Submit</button>
-
-                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
     </section>
+    
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="css/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
@@ -869,6 +230,11 @@
             console.log(contUs);
         }
 
+  
+        
+   function view(imgsrc) {
+      viewwin = window.open(imgsrc,'viewwin','width=600,height=300'); 
+   }
 
 
 
