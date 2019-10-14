@@ -55,12 +55,12 @@ function move2() {
     var id = setInterval(frame, 30);
 
     function frame() {
-        if (width >= 34) {
+        if (width >= 36) {
             clearInterval(id);
         } else {
             width++;
             elem.style.width = width + '%';
-            elem.innerHTML = width * 34 + '+';
+            elem.innerHTML = width * 42 + '+';
         }
     }
 }
@@ -87,12 +87,12 @@ function move4() {
     var id = setInterval(frame, 60);
 
     function frame() {
-        if (width >= 100) {
+        if (width >= 92) {
             clearInterval(id);
         } else {
             width++;
             elem.style.width = width + '%';
-            elem.innerHTML = width * 750 + '+';
+            elem.innerHTML = width * 830 + '+';
         }
     }
 }
@@ -172,3 +172,6 @@ $('.element').each(function () {
         $('.stage').children('.element').not('.active').removeClass('inactive');
     });
 });
+$(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");;
+        });
