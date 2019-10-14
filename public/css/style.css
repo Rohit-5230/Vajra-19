@@ -788,7 +788,15 @@ textarea {
 }
 
 .abt {
-    font-size: 1.4em
+    font-size: 1.4em;
+
+}
+
+@media all and (max-width:990px) {
+    .abt {
+       padding-left: 20px;
+       padding-right:20px;
+    }
 }
 
 .contain {
@@ -1199,6 +1207,38 @@ textarea {
         opacity: 1;
     }
 }
+
+/* For Placeholder hiding*/
+  
+.placeholder-fix::-webkit-input-placeholder  {
+    color:gray;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    .placeholder-fix::-moz-placeholder   {
+    color:gray;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    .placeholder-fix:-moz-placeholder   {
+    color:gray;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    
+    .placeholder-fix:focus::-webkit-input-placeholder  {color:transparent;}
+    .placeholder-fix:focus::-moz-placeholder   {color:transparent;}
+    .placeholder-fix:-moz-placeholder   {color:transparent;}
+  
 /*-------------------------------------------------*/
 /*----FOR FOOTER----*/
 

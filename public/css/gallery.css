@@ -1629,6 +1629,37 @@ textarea {
     }
 }
 
+/* For Placeholder hiding*/
+  
+.placeholder-fix::-webkit-input-placeholder  {
+    color:gray;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    .placeholder-fix::-moz-placeholder   {
+    color:gray;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    .placeholder-fix:-moz-placeholder   {
+    color:gray;
+    -webkit-transition: all 0.2s ease;
+    -ms-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    }
+    
+    .placeholder-fix:focus::-webkit-input-placeholder  {color:transparent;}
+    .placeholder-fix:focus::-moz-placeholder   {color:transparent;}
+    .placeholder-fix:-moz-placeholder   {color:transparent;}
+
 /*----FOR FOOTER----*/
 
 .wrap-4 {

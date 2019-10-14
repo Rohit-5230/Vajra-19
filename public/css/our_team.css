@@ -162,7 +162,8 @@ body{
       background-position: center;
       background-size: cover;
       width: 100%;
-      padding: 4% 0 2% 10%;
+      padding: 4% 0 0 10%;
+      z-index:1000;
   }
   
   #signup_form {
@@ -861,3 +862,34 @@ textarea {
 
 /*--------------------------END OF CROUSEL---------------------------*/
 
+
+/* For Placeholder hiding*/
+  
+.placeholder-fix::-webkit-input-placeholder  {
+  color:gray;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  }
+  .placeholder-fix::-moz-placeholder   {
+  color:gray;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  }
+  .placeholder-fix:-moz-placeholder   {
+  color:gray;
+  -webkit-transition: all 0.2s ease;
+  -ms-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  }
+  
+  .placeholder-fix:focus::-webkit-input-placeholder  {color:transparent;}
+  .placeholder-fix:focus::-moz-placeholder   {color:transparent;}
+  .placeholder-fix:-moz-placeholder   {color:transparent;}
