@@ -45,10 +45,21 @@ function showSlides(n) {
     captionText.innerHTML = dots[slideIndex - 1].alt;
 }
 
- function openNav() {
-            document.getElementById("myNav").style.width = "100%";
-        }
+function openNav() {
+   
+    let x=  screen.width;
+ 
+    if(x < 700)
+    {
+         document.getElementById("myNav").style.width = "60%";
+    }
+    else{
+       
+        document.getElementById("myNav").style.width = "20%";
+    }
+    
+}
 
-        function closeNav() {
-            document.getElementById("myNav").style.width = "0%";
-        }
+function closeNav() {
+    document.getElementById("myNav").style.width = "0%";
+}

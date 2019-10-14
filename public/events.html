@@ -25,7 +25,6 @@
                 <a href='index.html' onclick="closeNav()">HOME</a>
                 <a href="index.html#aboutus" onclick="closeNav()">ABOUT US</a>
                 <a href="events.html#events" onclick="closeNav()">EVENTS</a>
-                <a href="images/GeneralRules.pdf" onclick="closeNav()">RULEBOOK</a>
                 <a href="sponsors.html#sponsors" onclick="closeNav()">SPONSORS</a>
                 <a href="gallery.html#gallery" onclick="closeNav()">GALLERY</a>
                 <a href="our_team.html#our_team" onclick="closeNav()">OUR TEAM</a>
@@ -693,13 +692,24 @@
 
 <script>
         function openNav() {
-          document.getElementById("myNav").style.width= "100%";
-        }
-        
-        function closeNav() {
-          document.getElementById("myNav").style.width= "0%";
-        }
-        
+   
+   let x=  screen.width;
+
+   if(x < 700)
+   {
+        document.getElementById("myNav").style.width = "60%";
+   }
+   else{
+      
+       document.getElementById("myNav").style.width = "20%";
+   }
+   
+}
+
+function closeNav() {
+   document.getElementById("myNav").style.width = "0%";
+}
+
         </script>
 </body>
 
