@@ -13,4 +13,6 @@ new WOW().init();
         function closeNav() {
             document.getElementById("myNav").style.width = "0%";
         }
-
+$(window).load(function() {
+            $(".se-pre-con").fadeOut("slow");;
+        });
