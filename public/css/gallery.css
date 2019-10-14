@@ -16,7 +16,15 @@ ul {
 * {
   box-sizing: border-box;
 }
-
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/preloader.gif) center no-repeat #62b849;
+}
 body {
   margin: 0;
   font-family: Arial;
@@ -1523,7 +1531,7 @@ textarea {
     background-position: center;
     background-size: cover;
     width: 100%;
-    padding: 4% 0 6% 0;
+    padding: 4% 0 2% 0;
 }
 
 #signup_form {
@@ -1614,3 +1622,42 @@ textarea {
     
 }
 /*----END FOOTER----*/
+/*.......FOR US.............*/
+
+
+.we{
+    margin-top: 3%;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+/*    background: #fadce1;*/
+
+}
+.inn{
+    color: aliceblue;
+}
+.names{
+    display: inline;
+        text-align: center;
+}
+.names strong{
+    font-family: 'nexa','arial';
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.log{
+    padding-right: 1%;
+    padding-left: 1%;
+    height: 45px;
+    width: auto;
+}
+.mhide{
+    display: none;
+}
+@media all and (max-width:450px) {
+    .mhide{
+        display: block;
+    }
+}
+
+

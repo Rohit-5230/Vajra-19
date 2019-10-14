@@ -20,7 +20,15 @@ img {
     vertical-align: bottom;
     max-width: 100%;
 }
-
+.se-pre-con {
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(../images/preloader.gif) center no-repeat #62b849;
+}
 /*-----=------FOR CROUSELS--------*/
 
 /* reset */
@@ -1640,3 +1648,45 @@ textarea {
     .placeholder-fix:focus::-webkit-input-placeholder  {color:transparent;}
     .placeholder-fix:focus::-moz-placeholder   {color:transparent;}
     .placeholder-fix:-moz-placeholder   {color:transparent;}
+
+/*.......FOR US.............*/
+
+.wrap-9{
+    padding-bottom: 2%;
+}
+.we{
+    margin-top: 3%;
+    font-family: monospace;
+    font-size: 16px;
+    text-align: center;
+/*    background: #fadce1;*/
+
+}
+.inn{
+    color: aliceblue;
+}
+.names{
+    display: inline;
+        text-align: center;
+}
+.names strong{
+    font-family: 'nexa','arial';
+    letter-spacing: 1px;
+    font-size: 17px;
+}
+.log{
+    padding-right: 1%;
+    padding-left: 1%;
+    height: 45px;
+    width: auto;
+}
+.mhide{
+    display: none;
+}
+@media all and (max-width:450px) {
+    .mhide{
+        display: block;
+    }
+}
+
+
