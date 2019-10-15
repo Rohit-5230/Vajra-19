@@ -2,6 +2,15 @@
   font-family: "nexa";
   src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: "mon-b";
+  src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "mon-r";
+  src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
+}
+
 .se-pre-con {
     position: fixed;
     left: 0px;
@@ -35,7 +44,7 @@
 /* reset */
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family: 'nexa';
+  font-family:"nexa";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
 }
@@ -657,7 +666,7 @@ img{
 }
 
 #events{
-    background-image: linear-gradient( rgba(15, 15, 15, 0.322), rgba(17, 16, 16, 0.425)), url('../images/eventbg.jpg');
+    background-image: linear-gradient( rgba(15, 15, 15, 0.322), rgba(17, 16, 16, 0.425)), url('../images/white_back.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -691,7 +700,7 @@ body{
 }
 
 #events{
-    background-image: linear-gradient( rgba(31, 30, 30, 0.096), rgba(29, 28, 28, 0.062)), url('../images/eventbg.jpg');
+    background-image: linear-gradient( rgba(31, 30, 30, 0.096), rgba(29, 28, 28, 0.062)), url('../images/white_back.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -713,9 +722,7 @@ body{
 
  /*FOR NAVBAR*/
 
-body {
-    font-family: 'nexa';
-  }
+
   
   .overlay {
     height: 100%;
@@ -728,6 +735,7 @@ body {
     background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
+    font-family: 'mon-b';
    
   }
   .wrap{

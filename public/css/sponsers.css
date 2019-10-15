@@ -848,7 +848,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-
+    
 }
 .glow {
     -webkit-animation: glow 2s ease-in-out infinite alternate;
