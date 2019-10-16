@@ -43,6 +43,12 @@ img {
             
         }
 }
+#myCarousel{
+    width:60%;
+    margin-left: auto;
+    margin-right: auto;
+    height:40%;
+}
 
 /*---------------------------FOR NAV MENU-----------------------------------*/
 
@@ -890,6 +896,19 @@ textarea {
     }
 }
 
+.hero2{
+    padding-top:10%;
+    position: absolute;
+    top: 49%;
+    left: 65%;
+    width: 64%;
+    -webkit-transform: translate3d(-50%, -50%, 0);
+    transform: translate3d(-50%, -50%, 0);
+    z-index: 200;
+    text-align: center;
+    font-weight:bolder;
+    text-transform: uppercase;
+}
 .hero {
    padding-top:5%;
     position: absolute;
@@ -982,7 +1001,7 @@ textarea {
 
 .abt {
     font-size: 1.7em;
-    
+    border:3px; border-style:solid; border-color:black; padding:4em;
 
 }
 
@@ -994,7 +1013,19 @@ textarea {
        
     }
 }
+.container1{
+    padding-left:10em;
+    padding-right:10em;
+}
 
+@media all and (max-width:990px) {
+    .container1 {
+       padding-left: 2em;
+       padding-right:2em;
+       font-size:0.8em;
+       
+    }
+}
 .contain {
     margin: 6% 0 6% 0;
     /*background-color: #beb*/
@@ -1377,3 +1408,70 @@ a {
     .placeholder-fix:focus::-moz-placeholder   {color:transparent;}
     .placeholder-fix:-moz-placeholder   {color:transparent;}
 
+
+    .container2 {
+        color: #333;
+        text-align: center;
+      }
+      
+    .container2  h1 {
+        font-weight: normal;
+      }
+      
+      .container2 
+        li {
+        display: inline-block;
+        font-size: 1.5em;
+        list-style-type: none;
+        padding: 1em;
+        text-transform: uppercase;
+      }
+      
+    .container2 
+        li span {
+        display: block;
+        font-size: 4.5rem;
+      }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      /* general styling */
+      /* html, body {
+        height: 100%;
+        margin: 0;
+      }
+      
+      body {
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        font-family: -apple-system, 
+          BlinkMacSystemFont, 
+          "Segoe UI", 
+          Roboto, 
+          Oxygen-Sans, 
+          Ubuntu, 
+          Cantarell, 
+          "Helvetica Neue", 
+          sans-serif;
+      } */
+      
+      .container2 {
+        margin: 0 auto;
+        color:#00F6FF;
+        position: absolute;
+      }
