@@ -48,7 +48,6 @@ img {
 
 
 
-
 html,
 body {
     margin: 0;
@@ -161,7 +160,7 @@ body {
   
 
 .wrap-2 {
-    background-image: url(../images/11.jpg);
+    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -983,6 +982,7 @@ textarea {
 
 .abt {
     font-size: 1.7em;
+    
 
 }
 
@@ -991,6 +991,7 @@ textarea {
        padding-left: 20px;
        padding-right:20px;
        font-size:1.4em;
+       
     }
 }
 

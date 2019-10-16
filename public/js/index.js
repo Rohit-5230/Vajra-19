@@ -175,4 +175,3 @@ $('.element').each(function () {
 $(window).load(function() {
             $(".se-pre-con").fadeOut();;
         });
-        

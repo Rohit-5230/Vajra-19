@@ -548,13 +548,11 @@ textarea {
   animation-name: kenburns-2;
   z-index: 2;
 }
-
 .slideshow-image:nth-child(3) {
   -webkit-animation-name: kenburns-3;
   animation-name: kenburns-3;
   z-index: 1;
 }
-
 .slideshow-image:nth-child(4) {
   -webkit-animation-name: kenburns-4;
   animation-name: kenburns-4;
@@ -688,7 +686,6 @@ textarea {
   }
 
   /*
-
           49% {
               transform: rotate(5deg);
           }
@@ -965,5 +962,3 @@ textarea {
         display: block;
     }
 }
-
-

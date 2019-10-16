@@ -52,15 +52,7 @@ html {
 body {
   margin: 0
 }
-.wrap-2{
-  background-image: url(../images/11.jpg);
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size:center;
-  padding-bottom: 60px;
-  height:100vh;
-}
+
 
 article,
 aside,
@@ -314,7 +306,7 @@ textarea {
   z-index: 3;
 }
 
-/*
+
 .slideshow-image:nth-child(2) {
   -webkit-animation-name: kenburns-2;
   animation-name: kenburns-2;
@@ -332,7 +324,7 @@ textarea {
   animation-name: kenburns-4;
   z-index: 0;
 }
-*/
+
 
 @-webkit-keyframes kenburns-1 {
   0% {
@@ -716,78 +708,164 @@ body{
    background-color:rgb(19, 92, 126);
    color: whitesmoke;
 }
+.hero {
+  padding-top:5%;
+   position: absolute;
+   top: 49%;
+   left: 48%;
+   width: 64%;
+   -webkit-transform: translate3d(-50%, -50%, 0);
+   transform: translate3d(-50%, -50%, 0);
+   z-index: 99;
+   text-align: center;
+   font-weight: 300;
+   text-transform: uppercase;
+}
+.flogo{
+   width: 80%;
+   
+}
+@media all and (max-width:450px) {
+   .hero{
+       width: 98%
+   }
+}
+#sc2{
+   width: 8%;
+}
 
 
 
 
  /*FOR NAVBAR*/
 
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 300;
+  top: 0;
+  right:0;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-x: hidden;
+  transition: 0.5s;
+ 
+}
+#logo{
 
-  
-  .overlay {
-    height: 100%;
-    width: 0;
-    position: fixed;
-    z-index: 300;
-    top: 0;
-    right:0;
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0, 0.9);
-    overflow-x: hidden;
-    transition: 0.5s;
-    font-family: 'mon-b';
-   
+width: 150px;
+height: 100px;
+top:2%;
+left:1%;
+position: fixed;
+margin: 0 auto;
+z-index: 600;
+}
+@media screen and (max-width: 550px) {
+  #logo{        
+      width:80px;
+      height: 80px;
+      top:2%;
+      left:0;
+      position: fixed;
+      margin: 0 auto;
+      z-index: 600;
   }
-  .wrap{
-      background-color:black;
-      height:9vh;
-      position:fixed;
-      top:0;
-      width:100%;
-      z-index:1000;
-            
-  }  
-  
-
-  .overlay-content {
-    position: relative;
-    top: 12%;
-    width: 100%;
-    text-align: center;
-    margin-top: 1em;
-  }
-  
-  .overlay a {
-    padding: 8px;
-    text-decoration: none;
-    font-size: 30px;
-    color:blueviolet;
-    display: block;
-    transition: 0.3s;
-    text-align:center;
-  }
-
-  
-  .overlay a:hover, .overlay a:focus {
-    color: #f1f1f1;
-  }
-  
-  .overlay .closebtn {
-    position: absolute;
-    top: 0%;
-    right: 1%;
-    font-size: 40px;
-    color:whitesmoke;
-  }
-  
-  @media screen and (max-height: 450px) {
-    .overlay a {font-size: 10px}
-    .overlay .closebtn {
-    font-size: 10px;
-    top: 0%;
-    right: 1%;
+}
+#naa{
+    position:fixed;
+    top:20px;
+    right:15px;
+    color:white;
+    background-color: black;
+    padding: 0px 8px;
+    border-radius:7px;
+    z-index:60;
+    font-size:30px;
+}  
+@media screen and (max-width:550px){
+    #naa{
+        position:fixed;
+        top:15px;
+        right:12px;
+        color:white;
+        background-color: #000;
+        border-radius:7px;
+        z-index:60;
+        font-size: 20px;
     }
+}
+
+.overlay-content {
+  position: relative;
+  top: 12%;
+  width: 100%;
+  text-align: center;
+  margin-top: 1em;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 30px;
+  color:skyblue;
+  display: block;
+  transition: 0.3s;
+  text-align:center;
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 5%;
+  right:6%;
+  font-size: 60px;
+  color:whitesmoke;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 10px}
+  .overlay .closebtn {
+  font-size: 10px;
+  top: 0%;
+  right: 1%;
   }
+}
+
+.wrap-2 {
+    
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
+  height: 100vh;
+  top:0%;
+}
+
+.glow {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+
+
+}
+
+@-webkit-keyframes glow {
+  from {
+      text-shadow: 0 0 1px white, 0 0 2px #041a23, 0 0 3px #041a23, 0 0 4px #041a23, 0 0 5px #041a23;
+  }
+
+  to {
+      text-shadow: 0 0 6px #3a41e0, 0 0 12px #3a41e0, 0 0 18px #3a41e0, 0 0 24px #3a41e0;
+  }
+}
+
 
   /*----FOR FOOTER----*/
 
@@ -889,6 +967,18 @@ body{
   }
   
   /*----END FOOTER----*/
+
+  .overlay-effect {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:white;
+    overflow:hidden;
+  } 
 
 /* For Placeholder hiding*/
   
