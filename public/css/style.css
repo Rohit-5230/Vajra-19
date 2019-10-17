@@ -243,9 +243,7 @@ summary {
 audio,
 canvas,
 progress,
-video {
-    display: inline-block
-}
+video,
 
 audio:not([controls]) {
     display: none;
@@ -728,7 +726,7 @@ textarea {
 
     76.5625% {
         opacity: 1;
-    }
+    }video
 
 
     98.4375% {
@@ -1000,13 +998,6 @@ textarea {
 }
 
 
-.aftermovie{
-    
-    position: relative;
-    font-size: 30px;
-    color: #000;
-    text-align:center;
-}
 
 .first {
     font-size: 2em;
@@ -1519,6 +1510,26 @@ a {
     .smalltext{
         
         font-size: 8px;
+    }
+}
+
+#video{
+    
+    margin: auto ;
+    text-align: center;
+}
+iframe{
+   position: relative;
+
+   margin: auto auto;
+  
+}
+
+@media all and (max-width:550px) {
+    iframe{
+        display: block;
+        width : 90%;
+
     }
 }
 
