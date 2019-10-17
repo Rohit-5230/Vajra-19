@@ -1500,10 +1500,10 @@ iframe{
 
 
 /* New Contact*/
-
+/* 
 #contact {
     width: 100%;
-    height: 70vh;
+    height: 0vh;
     background-color: #111;
     overflow: hidden;
     padding-bottom: 200px;
@@ -1526,22 +1526,85 @@ iframe{
     position: relative;
     max-width: 800px;
   }
-  
-  /* Begin Left Contact Page */
+  */
   .form-horizontal {
     float: left;
-    max-width: 400px;
+    max-width: 300px;
     font-family: 'Lato';
     font-weight: 400;
-   
+   text-align: center;
   }
-  
+ 
   .form-control, textarea {
-    max-width: 400px;
-    background-color: #111;
+    max-width: 300px;
+    background-color:white;
     color: #fff;
     letter-spacing: 1px;
   }
+  .wrap-9 {
+    background-image: url(../images/dew.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding: 2% 0 0 0;
+    z-index: 1000;
+}
+
+#signup_form {
+
+    padding: 40px;
+}
+
+#signin {
+    padding: 20px;
+    color: black;
+    width: 450px;
+    border-radius: 10px;
+}
+
+#contacting {
+    padding: 40px;
+}
+
+.empty {
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+}
+
+#faa {
+    color: white;
+    font-size: 29px;
+    z-index:1000;
+}
+
+@media all and (max-width:450px) {
+
+    #signin {
+        width: 100%;
+        padding: 10px;
+        border-radius: 4px;
+    }
+
+    #designation {
+        width: 100%;
+        padding: 0;
+    }
+
+    .form-control {
+        width: 100%;
+        padding: 0;
+    }
+}
+
+.line {
+    border-top: 2px solid aliceblue;
+    width: 50px;
+    margin: auto;
+
+} */
+
   
   .send-button {
     margin-top: 15px;
@@ -1566,16 +1629,16 @@ iframe{
   
   .button:hover {
     transform: translate3d(0px, -29px, 0px);
-  }
+  } 
   
-  /* Begin Right Contact Page */
+  /* Begin Right Contact Page 
   .direct-contact-container {
     max-width: 400px;
     float: right;
     margin-top: 5px;
   }
   
-  /* Location, Phone, Email Section */
+  /* Location, Phone, Email Section 
   .contact-list {
     list-style-type: none;
     margin-left: -30px;
@@ -1617,7 +1680,7 @@ iframe{
   }
   
   
-  /* Social Media Icons */
+  /* Social Media Icons 
   .social-media-list {
     position: relative;
     font-size: 2.3rem;
@@ -1684,7 +1747,7 @@ iframe{
     border-color: rgba(255,255,255,.8); ;
   }
   
-  /* Begin Media Queries*/
+  /* Begin Media Queries
   @media screen and (max-width: 760px) {
       #contact {
           height: 1000px;
@@ -1714,7 +1777,7 @@ iframe{
   
   @media screen and (max-width: 569px) {
     #contact {
-      height: 1200px;
+      height: 1200px;signin
       }
     .section-header{
       font-size: 50px;
@@ -1756,4 +1819,74 @@ iframe{
     .send-button {
       width: 99%;
     }
+  } */
+
+
+
+
+
+
+  footer {
+    background: #222;
+    color: #aaa;
+    padding-top: 10px;
+  }
+  
+  footer a {
+    color: #aaa;
+  }
+  
+  footer a:hover {
+    color: #fff;
+  }
+  
+  footer h3 {
+   color: #0894d1;
+    letter-spacing: 1px;
+    margin: 30px 0 20px;
+  }
+  
+  footer .three-column {
+   overflow: hidden;
+  }
+  
+  footer .three-column li{
+   width: 33.3333%;
+    float: left;
+    padding: 5px 0;
+  }
+  
+  footer .socila-list {
+    overflow: hidden;
+    margin: 20px 0 10px;
+  }
+  
+  footer .socila-list li {
+    float: left;
+    margin-right: 3px;
+    opacity: 0.7;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  footer .socila-list li:hover {
+    opacity: 1;
+  }
+  
+  footer .img-thumbnail {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid #444;
+    margin-bottom: 5px;
+  }
+  
+  footer .copyright {
+    padding: 15px 0;
+    background: #333;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+  
+  footer .copyright span {
+    color: #0894d1;
   }
