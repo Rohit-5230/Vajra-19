@@ -65,9 +65,8 @@ img {
 }
 
 @media screen and (max-width: 550px) {
-        .carousel-inner > .item > img {
-            max-width: 100%;
-            
+        #myCarousel{
+            width:70%;       
         }
 }
 #myCarousel{
@@ -1868,6 +1867,9 @@ iframe{
     overflow: hidden;
     border-radius: 50%;
     transition: all 0.3s ease-in-out;
+    width: 5em;
+    height: 5em;
+    
   }
   
   footer .socila-list li:hover {
@@ -1890,3 +1892,8 @@ iframe{
   footer .copyright span {
     color: #0894d1;
   }
+
+  .sponserbutton{
+      display: none;
+  }
+  
