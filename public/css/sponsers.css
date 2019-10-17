@@ -3,6 +3,15 @@
     src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
   }
 
+  @font-face {
+    font-family: "mon-b";
+    src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
+}
+@font-face {
+    font-family: "mon-r";
+    src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
+}
+
 * {
     margin: 0
 }
@@ -20,7 +29,7 @@ img {
     vertical-align: bottom;
     max-width: 100%;
 }
-.se-pre-con {
+/* .se-pre-con {
     position: fixed;
     left: 0px;
     top: 0px;
@@ -28,7 +37,34 @@ img {
     height: 100%;
     z-index: 9999;
     background: url(../images/preloader.gif) center no-repeat ;
-}
+} */
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color:black;
+    /* change if the mask should have another color then white */
+    z-index: 9999;
+    /* makes sure it stays on top */
+  }
+  #status {
+   height: 100%;
+   width: 100%;
+    position: absolute;
+    object-fit: cover;
+    /* centers the loading animation horizontally one the screen */
+   
+    /* centers the loading animation vertically one the screen */
+    background-image: url(../images/preloader.gif);
+    /* path to your loading animation */
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0px 0px 0px 0px;
+    /* is width and height divided by two */
+  }
 /*-----=------FOR CROUSELS--------*/
 
 /* reset */
@@ -674,78 +710,133 @@ body {
 
 /*FOR NAVBAR*/
 
-body {
-    font-family: 'Lato', sans-serif;
-}
-
 .overlay {
     height: 100%;
     width: 0;
     position: fixed;
     z-index: 300;
     top: 0;
-    right: 0;
-    background-color: rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.9);
+    right:0;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0, 0.9);
     overflow-x: hidden;
     transition: 0.5s;
-
-}
-
-.wrap {
-    background-color: black;
-    height: 8vh;
-    position: fixed;
-    /* Set the navbar to fixed position */
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-
-}
-
-
-.overlay-content {
+   
+  }
+  #logo{
+  
+  width: 150px;
+  height: 100px;
+  top:2%;
+  left:1%;
+  position: fixed;
+  margin: 0 auto;
+  z-index: 600;
+  }
+  @media screen and (max-width: 550px) {
+    #logo{        
+        width:80px;
+        height: 80px;
+        top:2%;
+        left:0;
+        position: fixed;
+        margin: 0 auto;
+        z-index: 600;
+    }
+  }
+  #naa{
+      position:fixed;
+      top:20px;
+      right:15px;
+      color:white;
+      background-color: black;
+      padding: 0px 8px;
+      border-radius:7px;
+      z-index:60;
+      font-size:30px;
+  }  
+  @media screen and (max-width:550px){
+      #naa{
+          position:fixed;
+          top:15px;
+          right:12px;
+          color:white;
+          background-color: #000;
+          border-radius:7px;
+          z-index:60;
+          font-size: 20px;
+      }
+  }
+  
+  .overlay-content {
     position: relative;
     top: 12%;
     width: 100%;
     text-align: center;
     margin-top: 1em;
-
-}
-
-.overlay a {
+  }
+  
+  .overlay a {
     padding: 8px;
     text-decoration: none;
     font-size: 30px;
-    color: blueviolet;
+    color:skyblue;
     display: block;
     transition: 0.3s;
-}
-
-.overlay a:hover,
-.overlay a:focus {
+    text-align:center;
+  }
+  
+  
+  .overlay a:hover, .overlay a:focus {
     color: #f1f1f1;
-}
-
-.overlay .closebtn {
+  }
+  
+  .overlay .closebtn {
     position: absolute;
-    top: 1%;
-    right: 1%;
+    top: 5%;
+    right:6%;
     font-size: 60px;
-    color: whitesmoke;
-}
-
-@media screen and (max-height: 450px) {
-    .overlay a {
-        font-size: 20px
-    }
-
+    color:whitesmoke;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .overlay a {font-size: 10px}
     .overlay .closebtn {
-        font-size: 10px;
-        top: 1%;
-        right: 1%;
+    font-size: 10px;
+    top: 0%;
+    right: 1%;
     }
-}
+  }
+  
+  .wrap-2 {
+      
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 60px;
+    height: 100vh;
+    top:0%;
+  }
+  
+  .glow {
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+  
+  
+  }
+  
+  @-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 1px white, 0 0 2px #041a23, 0 0 3px #041a23, 0 0 4px #041a23, 0 0 5px #041a23;
+    }
+  
+    to {
+        text-shadow: 0 0 6px #3a41e0, 0 0 12px #3a41e0, 0 0 18px #3a41e0, 0 0 24px #3a41e0;
+    }
+  }
+  
 
 
 *,
@@ -841,7 +932,7 @@ body {
 }
 
 .wrap-3 {
-    padding-top: 1vh;
+    padding-top: 55em;
     background-image: url(../images/back.jpg);
     display: block;
     background-attachment: fixed;

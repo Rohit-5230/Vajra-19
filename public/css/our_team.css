@@ -2,6 +2,14 @@
   font-family: "nexa";
   src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
 }
+@font-face {
+  font-family: "mon-b";
+  src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
+}
+@font-face {
+  font-family: "mon-r";
+  src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
+}
 
 body{
     margin: 0;
@@ -9,7 +17,7 @@ body{
     font-family:"nexa","curly";
 
 }
-.se-pre-con {
+/* .se-pre-con {
     position: fixed;
     left: 0px;
     top: 0px;
@@ -17,6 +25,33 @@ body{
     height: 100%;
     z-index: 9999;
     background: url(../images/preloader.gif) center no-repeat ;
+} */
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:black;
+  /* change if the mask should have another color then white */
+  z-index: 9999;
+  /* makes sure it stays on top */
+}
+#status {
+ height: 100%;
+ width: 100%;
+  position: absolute;
+  object-fit: cover;
+  /* centers the loading animation horizontally one the screen */
+ 
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../images/preloader.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 0px 0px 0px;
+  /* is width and height divided by two */
 }
 #our_team{
     background-image: url("../images/back.jpg");
@@ -91,6 +126,20 @@ body{
  
 }
 
+/*---------------------------FOR NAV MENU-----------------------------------*/
+
+
+
+html,
+body {
+    margin: 0;
+    box-sizing: border-box;
+    
+    font-family: "mon-b";
+
+}
+
+
 /*FOR NAVBAR*/
 
 .overlay {
@@ -107,7 +156,7 @@ body{
  
 }
 #logo{
-background: #000;
+
 width: 150px;
 height: 100px;
 top:2%;
@@ -116,10 +165,10 @@ position: fixed;
 margin: 0 auto;
 z-index: 600;
 }
-@media screen and (max-height: 550px) {
-  #logo{
-      width: 50px;
-      height: 50px;
+@media screen and (max-width: 550px) {
+  #logo{        
+      width:80px;
+      height: 80px;
       top:2%;
       left:0;
       position: fixed;
@@ -136,7 +185,20 @@ z-index: 600;
     padding: 0px 8px;
     border-radius:7px;
     z-index:60;
+    font-size:35px;
 }  
+@media screen and (max-width:550px){
+    #naa{
+        position:fixed;
+        top:15px;
+        right:12px;
+        color:white;
+        background-color: #000;
+        border-radius:7px;
+        z-index:60;
+        font-size: 25px;
+    }
+}
 
 .overlay-content {
   position: relative;
@@ -177,6 +239,38 @@ z-index: 600;
   right: 1%;
   }
 }
+
+
+
+.wrap-2 {
+  
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 60px;
+  height: 100vh;
+  top=0%;
+}
+
+.glow {
+  -webkit-animation: glow 2s ease-in-out infinite alternate;
+  -moz-animation: glow 2s ease-in-out infinite alternate;
+  animation: glow 2s ease-in-out infinite alternate;
+
+
+}
+
+@-webkit-keyframes glow {
+  from {
+      text-shadow: 0 0 1px white, 0 0 2px #041a23, 0 0 3px #041a23, 0 0 4px #041a23, 0 0 5px #041a23;
+  }
+
+  to {
+      text-shadow: 0 0 6px #3a41e0, 0 0 12px #3a41e0, 0 0 18px #3a41e0, 0 0 24px #3a41e0;
+  }
+}
+
 
 
 /*----FOR FOOTER----*/

@@ -1,4 +1,6 @@
 
+// For Preloader
+
 
 $(window).on('load', function() { // makes sure the whole site is loaded
         setTimeout(function(){ 
@@ -9,7 +11,7 @@ $(window).on('load', function() { // makes sure the whole site is loaded
    
   })
 
-
+//
 
 
 
