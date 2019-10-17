@@ -20,6 +20,33 @@
     z-index: 9999;
     background: url(../images/preloader.gif) center no-repeat ;
 }
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color:black;
+  /* change if the mask should have another color then white */
+  z-index: 9999;
+  /* makes sure it stays on top */
+}
+#status {
+ height: 100%;
+ width: 100%;
+  position: absolute;
+  object-fit: cover;
+  /* centers the loading animation horizontally one the screen */
+ 
+  /* centers the loading animation vertically one the screen */
+  background-image: url(../images/preloader.gif);
+  /* path to your loading animation */
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0px 0px 0px 0px;
+  /* is width and height divided by two */
+}
+
 .glow {
   -webkit-animation: glow 2s ease-in-out infinite alternate;
   -moz-animation: glow 2s ease-in-out infinite alternate;
