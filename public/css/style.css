@@ -1469,11 +1469,13 @@ a {
 }
 
 
+
 @media all and (max-width:550px) {
     #clockdiv{
         top:-60px;
         position: relative;
         font-size: 15px;
+        font-weight:bold;
     }
     
     #clockdiv > div{
