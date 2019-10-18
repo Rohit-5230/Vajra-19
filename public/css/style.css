@@ -1278,9 +1278,9 @@ textarea {
     
 }
 /*----FOR FOOTER----*/
-
+/* 
 .wrap-9 {
-    /*    background: black;*/
+    /*    background: black;
     background-image: url(../images/dew.png);
     background-repeat: no-repeat;
     background-position: center;
@@ -1341,7 +1341,7 @@ textarea {
     width: 50px;
     margin: auto;
 
-}
+} */
 
 /*----END FOOTER----*/
 a {
@@ -1526,7 +1526,7 @@ iframe{
     max-width: 800px;
   }
   */
-  .form-horizontal {
+  /* .form-horizontal {
     float: left;
     max-width: 300px;
     font-family: 'Lato';
@@ -1602,7 +1602,7 @@ iframe{
     width: 50px;
     margin: auto;
 
-} */
+} 
 
   
   .send-button {
@@ -1628,7 +1628,7 @@ iframe{
   
   .button:hover {
     transform: translate3d(0px, -29px, 0px);
-  } 
+  }  */
   
   /* Begin Right Contact Page 
   .direct-contact-container {
@@ -1895,5 +1895,8 @@ iframe{
 
   .sponserbutton{
       display: none;
+  }
+  .form-control{
+      width:90%;
   }
   
