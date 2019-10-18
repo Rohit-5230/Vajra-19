@@ -11,6 +11,10 @@
   src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: "ral";
+  src: url("../fonts/raleway/Raleway-Medium.ttf") format("opentype");
+}
 .se-pre-con {
     position: fixed;
     left: 0px;
@@ -71,7 +75,7 @@
 /* reset */
 /*! normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
 html {
-  font-family:"mon-b";
+  font-family:"ral";
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%
 }
@@ -685,7 +689,7 @@ img{
 }
 
 #events{
-    background-image: linear-gradient( rgba(15, 15, 15, 0.322), rgba(17, 16, 16, 0.425)), url('../images/white_back.jpg');
+    background-image: linear-gradient( rgba(15, 15, 15, 0.322), rgba(17, 16, 16, 0.425)), url('../images/events-bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -694,7 +698,7 @@ img{
 }
 
 body{
-    font-family:"mon-b";
+    font-family:"ral";
 }
 
 .modal-header{
@@ -719,7 +723,7 @@ body{
 }
 
 #events{
-    background-image: linear-gradient( rgba(31, 30, 30, 0.096), rgba(29, 28, 28, 0.062)), url('../images/white_back.jpg');
+    background-image: linear-gradient( rgba(31, 30, 30, 0.096), rgba(29, 28, 28, 0.062)), url('../images/events-bg.jpg');
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -728,7 +732,7 @@ body{
 }
 
 body{
-    font-family:"mon-b";
+    font-family:"ral";
 }
 
 .modal-header{
@@ -1051,14 +1055,24 @@ z-index: 600;
 
 }
 .inn{
-    color: aliceblue;
+  color: aliceblue;
+  
+  padding-left:300px;
+}
+
+@media all and (max-width:550px)
+{
+.inn{
+  padding-left:35px;
+  padding-top:3px;
+}
 }
 .names{
     display: inline;
         text-align: center;
 }
 .names strong{
-    font-family: 'mon-b';
+    font-family: 'ral';
     letter-spacing: 1px;
     font-size: 17px;
 }
@@ -1118,6 +1132,15 @@ z-index: 600;
     footer .socila-list {
       overflow: hidden;
       margin: 20px 0 10px;
+      padding-left: 160px;
+    }
+  
+    @media screen and (max-width: 410px) {
+      footer .socila-list {
+          overflow: hidden;
+          margin: 20px 0 10px;
+          padding-left: 110px;
+        }
     }
     
     footer .socila-list li {
@@ -1155,8 +1178,23 @@ z-index: 600;
   
     
     .form-control{
-        width:90%;
+      width:100%;
+  }
+  
+  @media all and (max-width:550px){
+
+    .form-control{
+      width:100%;
     }
+
+  }
+
+      @media all and (max-width:550px){
+    .list-unstyled    
+    {
+      padding-left: 100px;
+    }
+  }
     
   
     /* footer section ends */ 

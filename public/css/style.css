@@ -6,6 +6,10 @@
     font-family: "mon-r";
     src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
 }
+@font-face {
+    font-family: "ral";
+    src: url("../fonts/raleway/Raleway-Medium.ttf") format("opentype");
+  }
 .se-pre-con {
     position: fixed;
     left: 0px;
@@ -43,7 +47,7 @@
     /* is width and height divided by two */
   }
 body {
-    font-family: 'mon-b';
+    font-family: 'ral';
 }
 
 * {
@@ -85,7 +89,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     
-    font-family: "mon-b";
+    font-family: "ral";
 
 }
 
@@ -1011,7 +1015,7 @@ textarea {
 
 .one {
     border-top: 3px solid #c6a311;
-    width: 45px;
+    width: 40px;
     margin: auto;
     animation: move 1.2s linear infinite alternate;
 
@@ -1231,7 +1235,7 @@ textarea {
   border-radius: 0px;
   font-weight: 400;
   font-size: 15px;
-  font-family: 'mon-b';
+  font-family: 'ral';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -1251,7 +1255,7 @@ textarea {
   border-radius: 0px;
   font-weight: 400;
   font-size: 15px;
-  font-family: 'mon-b';
+  font-family: 'ral';
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   display: inline-block;
@@ -1362,13 +1366,24 @@ a {
 }
 .inn{
     color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:30px;
+}
+
+@media all and (max-width:550px)
+{
+  .inn{
+    padding-left:4px;
+    padding-top:3px;
+  }
 }
 .names{
     display: inline;
         text-align: center;
 }
 .names strong{
-    font-family: 'nexa','arial';
+    font-family: 'ral';
     letter-spacing: 1px;
     font-size: 17px;
 }
@@ -1859,7 +1874,17 @@ iframe{
   footer .socila-list {
     overflow: hidden;
     margin: 20px 0 10px;
+    padding-left: 160px;
   }
+
+  @media screen and (max-width: 410px) {
+    footer .socila-list {
+        overflow: hidden;
+        margin: 20px 0 10px;
+        padding-left: 110px;
+      }
+  }
+
   
   footer .socila-list li {
     float: left;
@@ -1870,6 +1895,7 @@ iframe{
     transition: all 0.3s ease-in-out;
     width: 5em;
     height: 5em;
+    
     
   }
   
@@ -1899,6 +1925,24 @@ iframe{
       width:90%;
   }
   
+  .form-control{
+    width:100%;
+}
+
+@media all and (max-width:550px){
+
+  .form-control{
+    width:100%;
+  }
+
+}
+
+    @media all and (max-width:550px){
+  .list-unstyled    
+  {
+    padding-left: 100px;
+  }
+}
 
   /* footer section ends */ 
 

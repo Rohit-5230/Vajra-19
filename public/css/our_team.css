@@ -1,7 +1,4 @@
-@font-face {
-  font-family: "nexa";
-  src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
-}
+
 @font-face {
   font-family: "mon-b";
   src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
@@ -11,10 +8,15 @@
   src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: "ral";
+  src: url("../fonts/raleway/Raleway-Medium.ttf") format("opentype");
+}
+
 body{
     margin: 0;
     padding: 0;
-    font-family:"nexa","curly";
+    font-family:"ral";
 
 }
 /* .se-pre-con {
@@ -54,7 +56,7 @@ body{
   /* is width and height divided by two */
 }
 #our_team{
-    background-image: url("../images/back.jpg");
+    background-image: url("../images/our-teambg.jpg");
     background-size:cover;
     width: 100%;
     height:100%;
@@ -79,7 +81,7 @@ body{
 
   img {
     
-    border: solid 5.5px brown;
+    border: solid 3.5px black;
     box-shadow: 0 30px 25px 0 rgba(2,2,2,0.9);
     background:rgba(75, 59, 59, 0.68);
     
@@ -135,7 +137,7 @@ body {
     margin: 0;
     box-sizing: border-box;
     
-    font-family: "mon-b";
+    font-family: "ral";
 
 }
 
@@ -390,7 +392,7 @@ z-index: 600;
 
 body {
   margin: 0;
-    font-family: 'nexa';
+    font-family: 'ral';
 }
 .wrap-2{
   background-image: url(../images/11.jpg);
@@ -1024,6 +1026,21 @@ textarea {
     padding-left: 15%;
 /*    background: #fadce1;*/
 
+
+}
+
+@media all and (max-width:550px){
+  .we{
+    margin-top: 3%;
+   
+    font-size: 16px;
+   padding-left:3%;
+   
+/*    background: #fadce1;*/
+
+
+}
+
 }
 .inn{
     color: aliceblue;
@@ -1035,7 +1052,7 @@ textarea {
 @media all and (max-width:550px)
 {
   .inn{
-    padding-left:7px;
+    padding-left:2px;
     padding-top:3px;
   }
 }
@@ -1044,7 +1061,7 @@ textarea {
         text-align: center;
 }
 .names strong{
-    font-family: 'nexa','arial';
+    font-family: 'ral';
     letter-spacing: 1px;
     font-size: 17px;
 }
@@ -1107,8 +1124,17 @@ textarea {
     footer .socila-list {
       overflow: hidden;
       margin: 20px 0 10px;
+      padding-left: 160px;
     }
-    
+  
+    @media screen and (max-width: 410px) {
+      footer .socila-list {
+          overflow: hidden;
+          margin: 20px 0 10px;
+          padding-left: 100px;
+        }
+    }
+  
     footer .socila-list li {
       float: left;
       margin-right: 3px;
@@ -1144,8 +1170,21 @@ textarea {
   
     
     .form-control{
-        width:90%;
+        width:100%;
     }
     
+    @media all and (max-width:550px){
+
+      .form-control{
+        width:100%;
+      }
+
+    }
   
+        @media all and (max-width:550px){
+      .list-unstyled    
+      {
+        padding-left: 100px;
+      }
+    }
     /* footer section ends */ 
