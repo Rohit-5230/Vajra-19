@@ -1281,6 +1281,38 @@ textarea {
     }
     
 }
+
+.button3{
+    position: relative;
+    text-decoration: none;
+  color: #fff;
+  background-color:black;
+  padding: 20px 25px;
+  margin: 3% 0;
+    top : -150px;
+  border-radius: 0px;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: 'ral';
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  display: inline-block;
+  transition: 0.7s;
+
+}
+
+
+@media all and (max-width:550px) {
+    .button3{
+        position: relative;
+        top:2px;
+        width: 150px;
+        font-size:12px;
+        padding: 10px 10px;
+    }
+    
+}
+
 /*----FOR FOOTER----*/
 /* 
 .wrap-9 {
@@ -1879,11 +1911,11 @@ iframe{
     padding-left: 160px;
   }
 
-  @media screen and (max-width: 410px) {
+  @media screen and (max-width: 450px) {
     footer .socila-list {
         overflow: hidden;
         margin: 20px 0 10px;
-        padding-left: 110px;
+        padding-left: 100px;
       }
   }
 
