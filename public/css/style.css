@@ -1477,6 +1477,7 @@ a {
     }
 }
 
+/* after movie*/
 #video{
     
     margin: auto ;
@@ -1821,7 +1822,7 @@ iframe{
   } */
 
 
-
+    /*footer sectio starts*/
 
 
 
@@ -1893,10 +1894,14 @@ iframe{
     color: #0894d1;
   }
 
-  .sponserbutton{
-      display: none;
-  }
+  
   .form-control{
       width:90%;
   }
   
+
+  /* footer section ends */ 
+
+  .sponserbutton{
+    display: none;
+}
