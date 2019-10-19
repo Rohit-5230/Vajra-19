@@ -285,14 +285,14 @@ background-size: cover;"></div>
             <div class="col-lg-4 col-sm-12 text-center">
               <h3 style="font-size: 1.8em;">CONTACT FORM</h3>
               
-               <form action="/action_page.php" id="signin" class='form-horizontal' >
-
-
-                <input type="email" class="form-control empty placeholder-fix" id="email" placeholder="&#x0040; Enter Your Email">
+              <form action="" onsubmit="return postToGoogle();" target="_self" id="signin" class='form-horizontal' >
+    
+    
+                <input type="email" class="form-control empty placeholder-fix" name="entry.1109374655" id="email" placeholder="&#x0040; Enter Your Email">
                 <br>
-                <input type="text" class="form-control empty placeholder-fix" id="name" placeholder="&#x1F464; Enter Your Name">
+                <input type="text" class="form-control empty placeholder-fix" name="entry.40753262" id="name" placeholder="&#x1F464; Enter Your Name">
                 <br>
-                <select required class="form-control empty" id="exampleFormControlSelect1">
+                <select required name="entry.361494558" class="form-control empty" id="exampleFormControlSelect1">
                     <option value="">--Select Your Designation--</option>
                     <option>Player</option>
                     <option>Captain</option>
@@ -300,9 +300,9 @@ background-size: cover;"></div>
 
                 </select>
                 <br>
-                <input type="text" class="form-control empty placeholder-fix" id="institute"  placeholder="&#x1F3EB; Enter Your College Name">
+                <input type="text" name="entry.1835107830" class="form-control empty placeholder-fix" id="institute"  placeholder="&#x1F3EB; Enter Your College Name">
                 <br>
-                <input type="text" class="form-control empty placeholder-fix" id="phone"  placeholder="&#x1F4DE; Enter Your Phone Number">
+                <input type="text" name="entry.854997708" class="form-control empty placeholder-fix" id="phone"  placeholder="&#x1F4DE; Enter Your Phone Number">
                 <br>
                 <button style="background: #0894d1;;border: none;width: 26%;float: none;;border-radius: 0; font-family: mon-r" type="submit" class="btn btn-primary">Submit</button>
 
@@ -328,6 +328,59 @@ background-size: cover;"></div>
             <br>
       </footer>
     </section>
+
+    <script>
+        function postToGoogle() {
+                         var field1 = $("#email").val();
+                        var field2 = $("#name").val();
+                        var field3 = $("#exampleFormControlSelect1").val();
+                        var field5 = $("#phone").val();
+                        var field4 = $("#institute").val();
+                        
+                        
+                        if(field2 == ""){
+                            alert('Please Fill Your Name');
+                            document.getElementById("name").focus();
+                            return false;
+                        }
+                        if(field1 == ""){
+                            alert('Please Fill Your Email');
+                            document.getElementById("email").focus();
+                            return false;
+                        }
+                        if(field5 == "" || field5.length > 10 || field5.length < 10){
+                            alert('Please Fill Your Mobile Number');
+                            document.getElementById("phone_number").focus();
+                            return false;
+                        }
+                        if(field4 == ""){
+                            alert('Please Fill Your College');
+                            document.getElementById("college").focus();
+                            return false;
+                        }
+                        
+                        
+                        
+            
+            
+                        $.ajax({
+                            url: "https://docs.google.com/forms/d/1mPr6ziw1FaYrk-jYloAoUD79EoMZxrCo6Kma6n6dwaU/formResponse?",
+                            data: {"entry.1109374655": field1, "entry.40753262": field2, "entry.361494558": field3, "entry.1835107830": field4,"entry.854997708": field5},
+                            type: "POST",
+                            dataType: "xml",
+                            success: function(d)
+                            {
+                            },
+                            error: function(x, y, z)
+                                {
+        
+                                    alert("Thank so much for your interest. We will be contacting you very soon");
+                                    
+                                }
+                        });
+                        return false;
+                    }
+        </script>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="css/bootstrap-3.4.1-dist/js/bootstrap.min.js"></script>
