@@ -722,12 +722,7 @@ html {
 /*---------------------------FOR NAV MENU-----------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Quicksand:400,500,700');
 
-@font-face {
-    font-family: "ral";
-    src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
-  }
 
-}
 
 .affix {
     padding: 0;
@@ -1694,6 +1689,19 @@ textarea {
 }
 .inn{
     color: aliceblue;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left:30px;
+    font-family: 'ral';
+}
+
+@media all and (max-width:550px)
+{
+  .inn{
+    padding-left:4px;
+    padding-top:3px;
+    font-family: 'ral';
+  }
 }
 .names{
     display: inline;
@@ -1762,14 +1770,21 @@ textarea {
         padding-left: 160px;
       }
     
-      @media screen and (max-width: 410px) {
+      @media screen and (max-width: 450px) {
         footer .socila-list {
             overflow: hidden;
             margin: 20px 0 10px;
-            padding-left: 110px;
+            padding-left: 100px;
           }
       }
       
+      @media screen and (max-width: 350px) {
+        footer .socila-list {
+            overflow: hidden;
+            margin: 20px 0 10px;
+            padding-left: 80px;
+          }
+      }
       footer .socila-list li {
         float: left;
         margin-right: 3px;

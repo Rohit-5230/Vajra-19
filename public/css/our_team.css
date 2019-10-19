@@ -1043,19 +1043,22 @@ textarea {
 
 }
 .inn{
-    color: aliceblue;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left:50px;
+  color: aliceblue;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left:105px;
+  font-family: 'ral';
 }
 
 @media all and (max-width:550px)
 {
-  .inn{
-    padding-left:2px;
-    padding-top:3px;
-  }
+.inn{
+  padding-left:60px;
+  padding-top:3px;
+  font-family: 'ral';
 }
+}
+
 .names{
     display: inline;
         text-align: center;
@@ -1120,20 +1123,28 @@ textarea {
       float: left;
       padding: 5px 0;
     }
-    
     footer .socila-list {
       overflow: hidden;
       margin: 20px 0 10px;
       padding-left: 160px;
     }
   
-    @media screen and (max-width: 410px) {
+    @media screen and (max-width: 450px) {
       footer .socila-list {
           overflow: hidden;
           margin: 20px 0 10px;
           padding-left: 100px;
         }
     }
+
+    @media screen and (max-width: 350px) {
+      footer .socila-list {
+          overflow: hidden;
+          margin: 20px 0 10px;
+          padding-left: 80px;
+        }
+    }
+
   
     footer .socila-list li {
       float: left;

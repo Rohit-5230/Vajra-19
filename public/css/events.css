@@ -1056,15 +1056,16 @@ z-index: 600;
 }
 .inn{
   color: aliceblue;
-  
+  font-family: 'ral';
   padding-left:300px;
 }
 
 @media all and (max-width:550px)
 {
 .inn{
-  padding-left:35px;
+  padding-left:60px;
   padding-top:3px;
+  font-family: 'ral';
 }
 }
 .names{
@@ -1139,7 +1140,7 @@ z-index: 600;
       footer .socila-list {
           overflow: hidden;
           margin: 20px 0 10px;
-          padding-left: 110px;
+          padding-left: 90px;
         }
     }
     
