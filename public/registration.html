@@ -43,7 +43,7 @@
                     
                     <div class="select-list">
                         <select name="entry.192175165" id="fac_type">
-                            <option slected value="">Accompanying Faculty Member</option>
+                            <option slected value="">Accompanying Faculty Member ?</option>
                             <option value="society">Yes</option>
                             <option value="language">No</option>
                         </select>
@@ -51,19 +51,29 @@
 
                     <div class="select-list abc">
                         <select name="entry.859588561" id="course_type">
-                            <option slected value="">Sports registering for</option>
+                            <option slected value="">Sports registering for ?</option>
+                            <option value="society">Badminton-Men</option>
+                            <option value="society">Badminton-Women</option>
+                            <option value="society">Basketball-Men</option>
+                            <option value="society">Basketball-Women</option>
+                            <option value="language">Chess</option>
                             <option value="society">Cricket</option>
                             <option value="society">Football</option>
-                            <option value="society">Basketball</option>
-                            <option value="society">Volleyball</option>
-                            <option value="society">Badminton</option>
-                            <option value="society">Table Tennis</option>
-                            <option value="language">Chess</option>
+                            <option value="society">Table Tennis-Men</option>
+                            <option value="society">Table Tennis-Women</option>
+                            <option value="society">Volleyball-Men</option>
+                            <option value="society">Volleyball-Women</option>
+                            
+                           
+                            
                         </select>
                     </div>
                     
                 </div>
-               
+                <div class="form-check">
+                    <input type="checkbox" name="agree-term" id="agree-term" class="agree-term"/>
+                    <label for="agree-term" class="label-agree-term"><span><span></span></span>I agree to the  <a href="images/GeneralRules.pdf" target="blank" class="term-service">Rules of Vajra'19</a></label>
+                </div>
                 <div class="form-submit">
                     <input type="submit" name="submit" id="submit" class="submit" value="Submit Form" />
                 </div>
@@ -72,11 +82,11 @@
 
     </div>
 
-    <h3 id="success-msg" style="font-size: 30px !important; text-align: center !important; margin-top:100px !important; display:none; color:black"> Your Registration is Done<br>For further details we will be contacting you soon</h3>
+    <h3 id="success-msg" style="font-size: 30px !important; text-align: center !important; margin-top:100px !important; display:none; color:black"> Your Registration is Done<br>For further details you will be receiving a confirmation mail soon</h3>
 
 
     <!-- JS -->
-    <script src="vendor/jquery/jquery.min.js"></script>
+    
     <script src="js/registration.js"></script>
 </body><!-- This templates was made by Colorlib (https://colorlib.com) -->
 
@@ -92,30 +102,45 @@
                     var field4 = $("#college").val();
                     var field5 = $("#fac_type option:selected").text();
                     var field6 = $("#course_type option:selected").text();
-                     
+                    
                     if(field1 == ""){
                         alert('Please Fill Your Name');
-                        document.getElementById("nameField").focus();
+                        document.getElementById("name").focus();
                         return false;
                     }
                     if(field2 == ""){
                         alert('Please Fill Your Email');
-                        document.getElementById("emailField").focus();
+                        document.getElementById("email").focus();
                         return false;
                     }
                     if(field3 == "" || field3.length > 10 || field3.length < 10){
                         alert('Please Fill Your Mobile Number');
-                        document.getElementById("mobField").focus();
+                        document.getElementById("phone_number").focus();
                         return false;
                     }
                     if(field4 == ""){
                         alert('Please Fill Your College');
-                        document.getElementById("mobField").focus();
+                        document.getElementById("college").focus();
                         return false;
                     }
-    
-    
+                    if(field5 == "" || field5=="Accompanying Faculty Member ?"){
+                        alert('Please fill faculty details');
+                        document.getElementById("fac_type").focus();
+                        return false;
+                    }
+                    if(field6 == "" || field6 == "Sports registering for ?"){
+                        alert('Please Fill Your Sport');
+                        document.getElementById("course_type").focus();
+                        return false;
+                    }
                     
+                   
+            
+            if($('input[name^="agree-term"]').is(":not(:checked)")){
+                alert("Agree to our terms.");
+                document.getElementById("mycheck").focus();
+            }
+        
         
                     $.ajax({
                         url: "https://docs.google.com/forms/d/1QDHGqdvK360paUKTcG8DlT3DBxUmGGFTV0wrXI-xCa8/formResponse?",
