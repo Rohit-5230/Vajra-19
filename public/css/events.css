@@ -1,17 +1,4 @@
 @font-face {
-  font-family: "nexa";
-  src: url("../fonts/Nexa_Free_Bold.otf") format("opentype");
-}
-@font-face {
-  font-family: "mon-b";
-  src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
-}
-@font-face {
-  font-family: "mon-r";
-  src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
-}
-
-@font-face {
   font-family: "ral";
   src: url("../fonts/raleway/Raleway-Medium.ttf") format("opentype");
 }
@@ -709,10 +696,7 @@ body{
 .border{
     width: 3px;
 }
-@font-face {
-    font-family: "mon-b";
-    src: url("../font/Product Sans Regular.ttf") format("opentype");
-}
+
 
 .modal-footer{
     display: inline !important;

@@ -1,12 +1,4 @@
 @font-face {
-    font-family: "mon-b";
-    src: url("../fonts/Montserrat-Bold.ttf") format("opentype");
-}
-@font-face {
-    font-family: "mon-r";
-    src: url("../fonts/Montserrat-Regular.ttf") format("opentype");
-}
-@font-face {
     font-family: "ral";
     src: url("../fonts/raleway/Raleway-Medium.ttf") format("opentype");
   }
