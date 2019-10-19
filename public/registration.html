@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>VAJRA'19 </title>
+
+    <!-- Font Icon -->
+    <link rel="stylesheet" href="fonts/material-icon/css/material-design-iconic-font.min.css">
+
+    <!-- Main css -->
+    <link rel="stylesheet" href="css/registration.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+</head>
+<body>
+
+    <div class="main">
+
+        <div class="container">
+            <form onsubmit="return postToGoogle();" target="_self" class="appointment-form" id="appointment-form">
+                <h2>VAJRA'19 Registration</h2>
+                <h4 >
+                    NOTE:
+                </h4>
+                <h5>
+                    Please register separately for if you are playing in more than one sport
+                    
+                </h5>
+                <div class="form-group-1">
+                   
+                    <input type="text" name="entry.1085050439" id="name" placeholder="Your Name" required />
+                    <input type="email" name="entry.892738614" id="email" placeholder="Email" required />
+                    <input type="number" name="entry.1446852288" id="phone_number" placeholder="Phone number" required />
+                    <input type="college" name="entry.1779007307" id="college" placeholder="College name" required />
+                    
+                    <div class="select-list">
+                        <select name="entry.192175165" id="fac_type">
+                            <option slected value="">Accompanying Faculty Member</option>
+                            <option value="society">Yes</option>
+                            <option value="language">No</option>
+                        </select>
+                    </div>
+
+                    <div class="select-list abc">
+                        <select name="entry.859588561" id="course_type">
+                            <option slected value="">Sports registering for</option>
+                            <option value="society">Cricket</option>
+                            <option value="society">Football</option>
+                            <option value="society">Basketball</option>
+                            <option value="society">Volleyball</option>
+                            <option value="society">Badminton</option>
+                            <option value="society">Table Tennis</option>
+                            <option value="language">Chess</option>
+                        </select>
+                    </div>
+                    
+                </div>
+               
+                <div class="form-submit">
+                    <input type="submit" name="submit" id="submit" class="submit" value="Submit Form" />
+                </div>
+            </form>
+        </div>
+
+    </div>
+
+    <h3 id="success-msg" style="font-size: 30px !important; text-align: center !important; margin-top:100px !important; display:none; color:black"> Your Registration is Done<br>For further details we will be contacting you soon</h3>
+
+
+    <!-- JS -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="js/registration.js"></script>
+</body><!-- This templates was made by Colorlib (https://colorlib.com) -->
+
+
+
+
+
+<script>
+    function postToGoogle() {
+                    var field1 = $("#name").val();
+                    var field2 = $("#email").val();
+                    var field3 = $("#phone_number").val();
+                    var field4 = $("#college").val();
+                    var field5 = $("#fac_type option:selected").text();
+                    var field6 = $("#course_type option:selected").text();
+                     
+                    if(field1 == ""){
+                        alert('Please Fill Your Name');
+                        document.getElementById("nameField").focus();
+                        return false;
+                    }
+                    if(field2 == ""){
+                        alert('Please Fill Your Email');
+                        document.getElementById("emailField").focus();
+                        return false;
+                    }
+                    if(field3 == "" || field3.length > 10 || field3.length < 10){
+                        alert('Please Fill Your Mobile Number');
+                        document.getElementById("mobField").focus();
+                        return false;
+                    }
+                    if(field4 == ""){
+                        alert('Please Fill Your College');
+                        document.getElementById("mobField").focus();
+                        return false;
+                    }
+    
+    
+                    
+        
+                    $.ajax({
+                        url: "https://docs.google.com/forms/d/1QDHGqdvK360paUKTcG8DlT3DBxUmGGFTV0wrXI-xCa8/formResponse?",
+                        data: {"entry.1085050439": field1, "entry.892738614": field2, "entry.1446852288": field3, "entry.1779007307": field4,"entry.192175165": field5,"entry.859588561": field6},
+                        type: "POST",
+                        dataType: "xml",
+                        success: function(d)
+                        {
+                        },
+                        error: function(x, y, z)
+                            {
+    
+                                $('#success-msg').show();
+                                $('#appointment-form').hide();
+                                
+                            }
+                    });
+                    return false;
+                }
+    </script>
+</html>
