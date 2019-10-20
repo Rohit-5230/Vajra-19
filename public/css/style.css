@@ -1263,6 +1263,17 @@ textarea {
   
 }
 
+@media (max-width:900px) and (min-width:560px) {
+    .button2{
+        position: relative;
+        top:70px;
+        width: 150px;
+        font-size:12px;
+        padding: 10px 10px;
+    }
+    
+}
+
 @media all and (max-width:550px) {
     .button2{
         position: relative;
@@ -1292,6 +1303,19 @@ textarea {
   transition: 0.7s;
 
 }
+
+
+@media (max-width:1000px) and (min-width:560px) {
+    .button3{
+        position: relative;
+        top:6px;
+        width: 150px;
+        font-size:12px;
+        padding: 10px 10px;
+    }
+    
+}
+
 
 
 @media all and (max-width:550px) {
